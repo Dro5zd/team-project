@@ -3,9 +3,12 @@
 //   flex-wrap: wrap;
 // }
 
-.favorites__item {
+.favorites__link {
+  display: block;
   border-radius: 50%;
   border: 11px solid #ffe550;
   width: 280px;
   height: 280px;
 }
+
+// .favorites__image {}
