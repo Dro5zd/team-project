@@ -1,5 +1,62 @@
 // Footer styles
 
-.footer{
-  font-size: 100px;
+.footer {
+  background-image: url(../images/mob/fruit-futer-mob-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include retina {
+    background-image: url(../images/mob/fruit-futer-mob-2x.png);
+  }
+}
+
+.footer-box {
+  display: flex;
+  padding-top: 60px;
+}
+
+.nav--footer {
+  margin-left: 81px;
+  margin-bottom: 40px;
+}
+
+.nav__link {
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: #000000;
+}
+
+.sub-form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.sub-form__title {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.sub-form__btn {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  padding: 11px 22px;
+  background-color: $white;
+  color: $black;
+  border: 1px solid $dark-green;
+  &:hover,
+  &:focus {
+    background-color: $yellow;
+  }
+}
+
+.sub-form__policy {
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.sub-form__link {
+  color: $dark-green;
+  padding-left: 3px;
+  text-decoration: underline;
 }
