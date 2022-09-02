@@ -3,9 +3,14 @@
   padding-bottom: 60px;
   background-image: url(./../images/bg/mob/rectangle-mob-x1.png);
   background-repeat: no-repeat;
+<<<<<<< Updated upstream
   background-size: contain;
   height: 100%;
   outline: 2px solid red;
+=======
+  background-size: 100% 100%;
+  max-width: 100%;
+>>>>>>> Stashed changes
 }
 .offerings__item {
     margin-bottom: 28px;
@@ -51,7 +56,6 @@
   &:hover,
   &:focus {
     background-color: $dark-green;
-    color: $white;
   }
 }
 .offerings__link {

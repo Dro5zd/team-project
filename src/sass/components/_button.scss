@@ -1,0 +1,9 @@
+button {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  border: 2px solid $dark-green;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color $hover-focus-decor-func;
+}
