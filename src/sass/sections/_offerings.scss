@@ -1,0 +1,100 @@
+.offerings {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-image: url(./../images/bg/mob/rectangle-mob-x1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+.offerings__item {
+    margin-bottom: 28px;
+    max-width: 450px;
+}
+.offerings__item::before {
+  display: block;
+  content: '';
+  margin-bottom: 16px;
+  width: 48px;
+  height: 48px;
+  background-color: $white;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.offerings__item--rocket::before {
+    background-image: url(../../src/images/icons/rocket-icon.svg);
+  }
+  .offerings__item--hand::before {
+    background-image: url(../../src/images/icons/hand-icon.svg);
+  }
+.offerings__description,
+.section__title--offerings {
+  margin-bottom: 28px;
+}
+.section__subtitle--offerings {
+  margin-bottom: 16px;
+}
+
+.offerings__button {
+  margin-right: 14px;
+  padding: 10px 22px;
+  background-color: $white;
+  &:hover,
+  &:focus {
+    background-color: $dark-green;
+    color: $white;
+  }
+}
+.offerings__link {
+  text-decoration: none;
+  color: $black;
+  &:hover,
+  &:focus {
+   text-decoration: underline;
+  }
+}
+.offerings__link::after {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 12px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(../../src/images/icons/right-arrow.svg);
+}
+.apple {
+  display: flex;
+  justify-content: center;
+}
+.apple__wrap {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 60px;
+  padding: 9px 9px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+.apple__bg {
+  position: relative;
+  background-color: $white;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+}
+.apple__gradient {
+position: absolute;
+bottom: 48px;
+translate: 50% 50%;
+width: 128px;
+height: 44px;
+background-image: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+filter: blur(13.2364px);
+}
+.apple__img {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 200px;
+  height: auto;
+}
