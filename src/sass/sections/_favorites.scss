@@ -28,7 +28,6 @@
 }
 
 .favorites__descr {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -80,6 +79,15 @@
   width: 100%;
   height: 100%;
   padding: 18px;
+
+  &:hover,
+  &:focus {
+    border-color: $green;
+  }
+
+  &:active {
+    border-color: $dark-green;
+  }
 
   @include tablet {
     padding: 20px;
