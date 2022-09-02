@@ -1,5 +1,180 @@
 // Header styles
 
+.logo {
+  width: 100%;
+}
+
 .header {
-  font-size: 100px;
+  z-index: 5;
+  background-color: $white;
+  position: fixed;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.container-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav__link,
+.contacts__link,
+.address__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-btn__icon-menu {
+  fill: $green;
+}
+
+.menu-btn {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //margin-left: auto;
+  //margin-top: 10px;
+  //margin-bottom: 10px;
+  //padding: 0;
+  //z-index: 5;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+//.menu-btn__icon-menu {
+//  display: none;
+//
+//  .menu-btn.is-open & {
+//    display: block;
+//  }
+//}
+
+//.menu-btn__icon-cross {
+//
+//  .menu-btn.is-open & {
+//    display: none;
+//  }
+//}
+
+.nav {
+  //margin-bottom: auto;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      margin-bottom: 0;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+    padding-bottom: 35px;
+
+    @include tablet {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.nav__link {
+  font-size: 40px;
+  line-height: 1.2;
+  display: inline-block;
+
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  //color: $black;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 30px 0;
+  }
+
+  &--current {
+    //color: $blue;
+  }
+
+  &--current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+
+    //background: $blue;
+    border-radius: 2px;
+
+    @include tablet {
+      background: transparent;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    //color: $blue;
+  }
+}
+
+.mob-menu {
+  position: absolute;
+  top: 48px;
+  right: 19px;
+  width: 130px;
+  border-radius: 30px 0 30px 30px;
+  box-shadow: 0 4px 24px rgba(105, 105, 105, 0.1);
+  overflow: hidden;
+  background: $white;
+}
+
+.mob-menu-nav__item {
+  padding: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $green;
+  }
+}
+
+.mob-menu-nav__link {
+  font-size: 16px;
+  line-height: 1.2;
+  color: $solid-black;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mob-menu__btn {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
