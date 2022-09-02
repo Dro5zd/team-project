@@ -1,75 +1,152 @@
 .subscribe{
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
 
-    width: 100%;
-    padding: 52px 15px 60px 15px;
-    margin-left: auto;
-    margin-right: auto;
-    @include mobile {
-        width: 480px;
-    }
+  width: 100%;
+  padding: 52px 15px 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet{
+    //display: flex;
+    display: flow-root;
+    width: 768px;
+    padding: 82px 15px 100px 15px;
+  }
 }
 
 .subscribe__title{
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.21;
-    color: $black;
-    width: 280px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.21;
+  color: $black;
+  width: 280px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+
+  @include tablet{
+    width: 100%;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.19;
+
+  }
 
 }
 
 .subscribe__text{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #2C2C2C;
-    width: 280px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2C2C2C;
+  width: 280px;
 
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+
+  @include tablet{
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+
+  }
 }
 
+.sub-form{
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  display: flex;
+  width: 279px;
+
+  @include tablet{
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+
+
 .sub-form__label{
-    font-size: 12px;
-    line-height: 1.5;
-     color: #505050;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color-input;
 }
 
 .sub-form__email{
-    padding: 12px 0 12px 12px;
-    height: 42px;
-    width: 100%;
-    background-color: transparent;
-    border: 0.854167px solid $yellow;
-    border-radius: 30px;
+  padding: 12px 0 12px 12px;
+  height: 42px;
+  width: 100%;
+  min-width: 279px;
+  background-color: transparent;
+  border: 0.854167px solid $yellow;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
 
-    margin-bottom: 20px;
+  margin-bottom: 4px;
+
+  @include tablet{
+    width: 395px;
+  }
+}
+
+.sub-form__email:not(:focus):not(:placeholder-shown):invalid {
+  border: 0.854167px solid #FF705D;
+}
+
+.sub-form__email:not(:focus):not(:placeholder-shown):valid{
+  border: 0.854167px solid #7EB101;
+}
+
+.error-group{
+  font-size: 10px;
+  line-height: 1.5;
+  color: #FF705D;
+  display: none;
+}
+
+.sub-form__email:not(:focus):not(:placeholder-shown):invalid + .error-group{
+  display: block;
+}
+
+.error::before{
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-image:url(../images/icons/Group\ \(1\).jpg);
 }
 
 .sub-form__button{
-    background: $green;
-    width: 103px;
-    height: 42px;
-    border-radius: 30px;
-    outline: none;
-    cursor: pointer;
-    border: none;
-    padding: 11px 22px ;
+  background: $green;
+  width: 103px;
+  height: 42px;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 11px 22px ;
 
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    color: $black;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: $black;
 
-    &:hover,
-    &:focus{
-        background-color:  #B5FF00;
-    }
+  &:hover,
+  &:focus{
+    background-color: $green-hover;
+  }
+
+  @include tablet{
+    margin-left: 22px;
+  }
 }
