@@ -17,6 +17,7 @@
     }
 
     @include tablet{
+
         padding: 60px 32px 120px 32px;
         width: 768px;
         display: block;
@@ -84,11 +85,11 @@
     margin-right: 0;
 }
 
-.customers__assembly{
+.customers__list{
     display: flex;
 }
 
-.svg__star{
+.customers__star{
     margin-bottom: 28px;
 }
 
