@@ -1,4 +1,5 @@
-.customers__say {
+.customers__say{
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -6,8 +7,8 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 15px;
-  background-image: url(../images/bg/mob/rectangle-b-mob-x1.png);
+  padding: 60px  15px;
+  background-image: url(../images/bg/mob/rectangle-b-mob-x1.png) ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -15,61 +16,42 @@
     width: 480px;
   }
 
-  @include tablet {
+  @include tablet{
+
     padding: 60px 32px 120px 32px;
     width: 768px;
     display: block;
 
     background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
   }
+
+  @include desktop{
+    background-image: url(../images/bg/desktop/rectangle-b-desktop-x1.png);
+    background-size: 100% 100%;
+  }
+
+
 }
 
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 60px  15px;
-    background-image: url(../images/bg/mob/rectangle-b-mob-x1.png) ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    @include mobile {
-        width: 480px;
-    }
-
-    @include tablet{
-
-        padding: 60px 32px 120px 32px;
-        width: 768px;
-        display: block;
-        
-        background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
-    }
-      
-.customers__title {
+.customers__title{
   width: 280px;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
-  
-
 
   margin-bottom: 20px;
 
-  @include tablet {
+  @include tablet{
     width: 501px;
     font-weight: 700;
     font-size: 42px;
     line-height: 1.16;
   }
+
 }
 
-.customers__text {
+.customers__text{
   width: 280px;
   font-style: normal;
   font-size: 14px;
@@ -77,72 +59,71 @@
 
   margin-bottom: 32px;
 
-  @include tablet {
+  @include tablet{
     width: 395px;
     font-size: 16px;
     line-height: 1.18;
   }
 }
 
-.customers__set {
-  @include tablet {
+
+.customers__set{
+  @include tablet{
     display: flex;
   }
 }
 
-.customers__item {
+.customers__item{
   background-color: #fff;
   width: 280px;
   margin-bottom: 24px;
   padding: 8px;
-  border-radius: 0px 30px 30px 30px;
+  border-radius: 0px 30px 30px 30px;;
   border-top-left-radius: 0%;
 
-  @include tablet {
+  @include tablet{
     margin-right: 32px;
   }
 }
 
-.customers__item:last-child {
+.customers__item:last-child{
   margin-right: 0;
 }
 
-
 .customers__list{
-    display: flex;
+  display: flex;
 }
 
 .customers__star{
-    margin-bottom: 28px;
-
+  margin-bottom: 28px;
 }
 
-.customers__comment {
+.customers__comment{
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
 }
 
-.customers__account {
+.customers__account{
   margin-top: 44px;
   display: flex;
   max-width: 166px;
-  border-right: 0.854167px solid #7eb101;
+  border-right: 0.854167px solid #7EB101;;
 }
 
-.customers__foto {
+.customers__foto{
   width: 48px;
   height: 48px;
   margin-right: 16px;
 }
 
-.customers__name {
+.customers__name{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
 }
 
-.customers__dude {
+.customers__dude{
   font-size: 14px;
   line-height: 1.5;
 }
