@@ -1,9 +1,28 @@
+.subscribe{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    width: 100%;
+    padding: 52px 15px 60px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @include mobile {
+        width: 480px;
+    }
+}
+
 .subscribe__title{
     font-weight: 700;
     font-size: 28px;
     line-height: 1.21;
     color: $black;
     width: 280px;
+
+    margin-bottom: 20px;
+
 }
 
 .subscribe__text{
@@ -11,5 +30,46 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #2C2C2C
+    color: #2C2C2C;
+    width: 280px;
+
+    margin-bottom: 40px;
+}
+
+.sub-form__label{
+    font-size: 12px;
+    line-height: 1.5;
+     color: #505050;
+}
+
+.sub-form__email{
+    padding: 12px 0 12px 12px;
+    height: 42px;
+    width: 100%;
+    background-color: transparent;
+    border: 0.854167px solid $yellow;
+    border-radius: 30px;
+
+    margin-bottom: 20px;
+}
+
+.sub-form__button{
+    background: $green;
+    width: 103px;
+    height: 42px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 11px 22px ;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: $black;
+
+    &:hover,
+    &:focus{
+        background-color:  #B5FF00;
+    }
 }
