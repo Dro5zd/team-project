@@ -1,1 +1,70 @@
-<section class='offerings'>OFFERING</section>
+<section class="offerings section">
+  <div class="container">
+    <div class="apple">
+      <div class="apple__wrap">
+        <div class="apple__bg">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/apple-desktop-x1.png 1x,
+                ./images/desktop/apple-desktop-x2.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/apple-tablet-big-x1.png 1x,
+                ./images/tablet/apple-tablet-big-x1.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/mob/apple-mob-x1.png 1x,
+                ./images/mob/apple-mob-x2.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="apple__img"
+              src="./images/mob/apple-mob-x1.png"
+              alt="green apple"
+              width="200"
+              height="206"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <h2 class="section__title offerings__title">
+      What’s Special About Our Offerings
+    </h2>
+    <p class="section__text offerings__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </p>
+    <div class="offerings__icon offerings__icon--rocket">
+    </div>
+    <h3 class="section__subtitle offerings__subtitle">
+        Fasest Delivery
+    </h3>
+    <p class="section__text offerings__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+    </p>
+        <div class="offerings__icon offerings__icon--hand">
+    </div>
+    <h3 class="section__subtitle offerings__subtitle">
+        Easy to order
+    </h3>
+    <p class="section__text offerings__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+    </p>
+    <button class="button offerings__button" type="button">Order Now</button>
+    <a class="offerings__link" href="#">Read More
+        <svg width="10" height="12">
+                <use href="./images/icons/sprite.svg#arrow-right"></use>
+              </svg>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,92 @@
+.offerings {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    background-image: url(./../images/bg/mob/rectangle-mob-x1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    outline: 2px solid red;
+    
+    &__title,
+    &__text {
+        margin-bottom: 28px;
+        max-width: 450px;
+        line-height: 1.17;
+    }
+    &__subtitle {
+        margin-bottom: 16px;
+    }
+    &__icon {
+        margin-bottom: 8px;
+        width: 48px;
+        height: 48px;
+        background-color: $white;
+        border-radius: 50%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        &--rocket {
+            background-image: url(./../images/icons/rocket-icon.svg);
+        }
+        &--hand {
+            background-image: url(./../images/icons/hand-icon.svg);
+        }
+    }
+    &__button {
+        margin-right: 14px;
+        padding: 10px 22px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 150%;
+        border: 2px solid $dark-green;
+        border-radius: 30px;
+        background-color: $white;
+        cursor: pointer;
+        transition: color $hover-focus-decor-func;
+        transition: background-color $hover-focus-decor-func;
+        &:hover,
+        &:focus {
+            background-color: $dark-green;
+            color: $white;
+        }
+    }
+    &__link {
+        padding: 9px 22px;
+        text-decoration: none;
+        color: $black;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        transition: border $hover-focus-decor-func;
+        &:hover,
+        &:focus {
+            border: 2px solid $black;
+        }
+    }
+}
+.apple {
+    display: flex;
+    justify-content: center;
+    &__wrap {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 60px;
+        padding: 9px 9px;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        background-color: transparent;
+    }
+    &__bg {
+        position: relative;
+        background-color: $white;
+        width: 256px;
+        height: 256px;
+        border-radius: 50%;
+    }
+    &__img {
+        position: absolute;
+        bottom: 40px;
+        left: 30px;
+        width: 200px;
+        height: auto;
+        background-image: radial-gradient(ellipse at bottom #2F583F 0%, rgba(105, 105, 105, 0) 100%);;
+    }
+}
