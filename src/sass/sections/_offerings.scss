@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  outline: 2px solid red;
 }
 .offerings__item {
     margin-bottom: 28px;
@@ -39,15 +38,7 @@
 .offerings__button {
   margin-right: 14px;
   padding: 10px 22px;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 150%;
-  border: 2px solid $dark-green;
-  border-radius: 30px;
   background-color: $white;
-  cursor: pointer;
-  transition: color $hover-focus-decor-func;
-  transition: background-color $hover-focus-decor-func;
   &:hover,
   &:focus {
     background-color: $dark-green;
