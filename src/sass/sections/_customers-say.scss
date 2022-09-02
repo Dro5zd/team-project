@@ -1,7 +1,12 @@
 .customers__say{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     width: 100%;
-    // margin-left: auto;
-    // margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 60px  15px;
     background-image: url(../images/bg/mob/rectangle-b-mob-x1.png) ;
     background-repeat: no-repeat;
@@ -11,6 +16,15 @@
         width: 480px;
     }
 
+    @include tablet{
+        padding: 60px 32px 120px 32px;
+        width: 768px;
+        display: block;
+        
+        background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
+    }
+      
+
 }
 
 .customers__title{
@@ -19,7 +33,16 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
+
     margin-bottom: 20px;
+
+    @include tablet{
+        width: 501px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+    }
+      
 }
 
 .customers__text{
@@ -27,16 +50,42 @@
     font-style: normal;  
     font-size: 14px;
     line-height: 1.14;
+
     margin-bottom: 32px;
+
+    @include tablet{
+        width: 395px;
+        font-size: 16px;
+        line-height: 1.18;
+    }
 }
 
-.customers__review{
+
+.customers__set{
+    @include tablet{
+    display: flex;
+}
+}
+
+.customers__item{
     background-color: #fff;
     width: 280px;
     margin-bottom: 24px;
     padding: 8px;
     border-radius: 0px 30px 30px 30px;;
     border-top-left-radius: 0%;
+
+    @include tablet{
+        margin-right: 32px;
+    }
+}
+
+.customers__item:last-child{
+    margin-right: 0;
+}
+
+.customers__assembly{
+    display: flex;
 }
 
 .svg__star{
