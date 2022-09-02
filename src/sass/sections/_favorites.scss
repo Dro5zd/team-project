@@ -14,10 +14,10 @@
   color: #2c2c2c;
   margin-bottom: 20px;
 
-  // @include tablet {
-  //   font-size: 42px;
-  //   line-height: 1.16;
-  // }
+  @include tablet {
+    font-size: 42px;
+    line-height: 1.16;
+  }
 }
 
 .favorites__descr {
@@ -33,25 +33,25 @@
   align-items: center;
   gap: 20px;
 
-  // @include tablet {
-  //   flex-wrap: wrap;
-  //   flex-direction: row;
-  //   justify-content: center;
-  // }
+  @include tablet {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
-// .favorites__item {
-//   @include tablet {
-//     flex-basis: calc((100% - 32px) / 2);
-//   }
-// }
+.favorites__item {
+  @include tablet {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
 
 .favorites__item--hide {
   display: none;
 
-  // @include tablet {
-  //   display: block;
-  // }
+  @include tablet {
+    display: block;
+  }
 }
 
 .favorites__link {
@@ -74,8 +74,8 @@
   width: 222px;
   height: 222px;
 
-  // @include tablet {
-  //   width: 268px;
-  //   height: 268px;
-  // }
+  @include tablet {
+    width: 268px;
+    height: 268px;
+  }
 }
