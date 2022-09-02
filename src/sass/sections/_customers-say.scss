@@ -24,6 +24,11 @@
         
         background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
     }
+
+    @include desktop{
+        background-image: url(../images/bg/desktop/rectangle-b-desktop-x1.png);
+        background-size: 100% 100%;
+    }
       
 
 }
