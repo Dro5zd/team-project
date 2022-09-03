@@ -9,12 +9,13 @@
   line-height: 1.53;
   cursor: pointer;
   transition: background-color $hover-focus-decor-func;
-  transition: color $hover-focus-decor-func;
-}
+  transition: border $hover-focus-decor-func;
+  }
 
 .button--order {
   border: none;
   padding: 6px 18px;
+  transition: background-color $hover-focus-decor-func;
 
   // .header & {
   //   margin-left: 30px;
