@@ -2,6 +2,7 @@
 
 .footer {
   margin: auto;
+  width: 100%;
   padding: 60px 15px;
   background-image: url(../images/mob/fruit-futer-mob-1x.png);
   background-repeat: no-repeat;
@@ -16,6 +17,22 @@
     @include retina {
       background-image: url(../images/tablet/fruit-futer-tablet-2x.png);
     }
+  }
+  @include desktop {
+    width: 1280px;
+    background-size: contain;
+    background-position: bottom;
+    background-image: url(../images/desktop/fruit-futer-desktop-1x.png);
+    @include retina {
+      background-image: url(../images/desktop/fruit-futer-desktop-2x.png);
+    }
+  }
+}
+
+.footer-desktop {
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
   }
 }
 
@@ -33,6 +50,10 @@
   @include tablet {
     margin-bottom: 0;
     margin-left: 114px;
+  }
+  @include desktop {
+    margin-left: 148px;
+    margin-right: 320px;
   }
 }
 
@@ -75,6 +96,7 @@
 }
 
 .sub-form__email--footer {
+  margin: 0;
   @include tablet {
     width: 279px;
   }
