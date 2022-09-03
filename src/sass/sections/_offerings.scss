@@ -21,7 +21,7 @@
     padding-top: 231px;
     padding-bottom: 43px;
   }
-} 
+}
 .container--offerings {
   @include desktop {
   display: flex;
@@ -30,7 +30,7 @@
   .offerings__wrap {
    @include desktop {
   padding-top: 30px;
-  } 
+  }
   }
 }
 .offerings__list {
