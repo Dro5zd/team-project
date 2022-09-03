@@ -1,0 +1,29 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" type="button" data-modal-close>
+      <svg class="modal__btn-img" width="11" height="11">
+        <use href="./images/icons/sprite.svg#cross"></use>
+      </svg>
+    </button>
+    <div class="registration-form-wrapper">
+      <h3 class="registration-form-wrapper__title">Order form</h3>
+      <form class="registration-form" name="registration-form">
+        <div class="registration-form__item">
+          <label class="registration-form__label" for="user_name">Name</label>
+          <input class="registration-form__input" type="text" name="name" id="user_name" placeholder="Your name">
+        </div>
+        <div class="registration-form__item">
+          <label class="registration-form__label" for="user_phone">Phone number</label>
+          <input class="registration-form__input" type="tel" name="tel" id="user_phone" placeholder="+38(0_ _) _ _ _   _ _   _ _">
+        </div>
+        <div class="registration-form__item">
+          <label class="registration-form__label" for="user_reg_email">E-mail</label>
+          <input class="registration-form__input" type="email" name="e-mail" id="user_reg_email" placeholder="example@gmail.com">
+        </div>
+        <button type="submit" class="main-btn">
+          <span>Відправити</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
