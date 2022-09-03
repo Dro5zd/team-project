@@ -1,17 +1,9 @@
 .section.hero {
-    padding-top: 136px;
+    padding-top: 132px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
 .section__title--hero,
 .section__text--hero {
     margin-bottom: 28px;
-}
-.hero__button {
-  padding: 6px 18px;
-  background-color: $dark-green;
-  &:hover,
-  &:focus {
-    background-color: $white;
-  }
 }

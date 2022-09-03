@@ -5,8 +5,9 @@
 @import '../utils/visually-hidden';
 @import './components/section';
 @import './components/container';
+@import './components/anchor';
 @import './components/button';
-@import './header';
+@import 'header/header';
 @import './sections/hero';
 @import './sections/offerings';
 @import './sections/favorites';
