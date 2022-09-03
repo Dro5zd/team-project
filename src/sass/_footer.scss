@@ -1,6 +1,7 @@
 // Footer styles
 
 .footer {
+  padding: 60px 0;
   background-image: url(../images/mob/fruit-futer-mob-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,12 +12,17 @@
 
 .footer-box {
   display: flex;
-  padding-top: 60px;
 }
 
 .nav--footer {
   margin-left: 81px;
   margin-bottom: 40px;
+}
+
+.nav__item--footer:not(:last-child) {
+  padding: 0;
+  margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .nav__link {
@@ -35,14 +41,15 @@
 .sub-form__title {
   display: block;
   margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-.sub-form__btn {
+.button--color {
   align-self: flex-end;
-  margin-bottom: 20px;
-  padding: 11px 22px;
+  margin: 20px 0;
   background-color: $white;
-  color: $black;
   border: 1px solid $dark-green;
   &:hover,
   &:focus {
@@ -59,4 +66,24 @@
   color: $dark-green;
   padding-left: 3px;
   text-decoration: underline;
+}
+
+.link-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.link-list__link {
+  font-size: 10px;
+  line-height: 1.2;
+  text-decoration: underline;
+
+  color: $dark-green;
+}
+
+.copyright {
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
 }
