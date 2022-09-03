@@ -1,14 +1,63 @@
 .offerings {
   padding-top: 70px;
   padding-bottom: 60px;
-  background-image: url(./../images/bg/mob/rectangle-mob-x1.png);
+  background-image: url(../images/bg/mob/rectangle-mob-x1.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
+  background-size: 100% 100%;
+  width: 100%;
+  @include mobile {
+    background-image: url(../images/bg/480/rectangle-480-x1.png);
+    width: 480px;
+  }
+  @include tablet {
+    background-image: url(../images/bg/tablet/rectangle-tablet-x1.png);
+    width: 768px;
+    padding-top: 187px;
+    padding-bottom: 100px;
+  }
+  @include desktop {
+    background-image: url(../images/bg/desktop/rectangle-desktop-x1.png);
+    width: 1280px;
+    padding-top: 231px;
+    padding-bottom: 43px;
+  }
+} 
+.container--offerings {
+  @include desktop {
+  display: flex;
+  gap: 90px;
+  }
+  .offerings__wrap {
+   @include desktop {
+  padding-top: 30px;
+  } 
+  }
+}
+.offerings__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  @include tablet {
+    flex-direction: row;
+    gap: 116px;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 67px;
+    margin-bottom: 32px;
+  }
 }
 .offerings__item {
-    margin-bottom: 28px;
-    max-width: 450px;
+  margin-bottom: 28px;
+  max-width: 450px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 .offerings__item::before {
   display: block;
@@ -27,12 +76,33 @@
   .offerings__item--hand::before {
     background-image: url(../../src/images/icons/hand-icon.svg);
   }
-.offerings__description,
+.offerings__description {
+  margin-bottom: 28px;
+    @include tablet {
+    margin-bottom: 40px;
+    width: 500px;
+    font-size: 16px;
+  }
+}
 .section__title--offerings {
   margin-bottom: 28px;
+  @include tablet {
+    margin-bottom: 20px;
+    width: 526px;
+    font-size: 42px;
+  }
 }
 .section__subtitle--offerings {
   margin-bottom: 16px;
+}
+.section__text--offerings {
+  width: 100%;
+  @include tablet {
+  width: 252px;
+  }
+  @include desktop {
+  width: 252px;
+  }
 }
 
 .offerings__button {
@@ -63,23 +133,55 @@
   background-image: url(../../src/images/icons/right-arrow.svg);
 }
 .apple {
+  position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
+  @include tablet {
+    justify-content: start;
+  }
+  @include desktop {
+    justify-content: start;
+  }
+}
+.apple::after {
+  visibility: none;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/tablet/apple-tablet-mid-x1.png), url(../images/tablet/apple-tablet-small-x1.png);
+  background-size: 166px 210px, 108px 136px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 52px left 380px, bottom 68px left 600px;
+  }
 }
 .apple__wrap {
   width: 280px;
   height: 280px;
-  margin-bottom: 60px;
   padding: 9px 9px;
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.5);
   background-color: transparent;
+  @include tablet {
+    width: 357px;
+    height: 357px;
+    padding: 12px 12px;
+  }
+  @include desktop {
+    width: 550px;
+    height: 550px;
+    padding: 19px 19px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+  }
 }
 .apple__bg {
   position: relative;
   background-color: $white;
-  width: 256px;
-  height: 256px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 .apple__gradient {
@@ -90,6 +192,16 @@ width: 128px;
 height: 44px;
 background-image: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
 filter: blur(13.2364px);
+@include tablet {
+    bottom: 60px;
+    width: 164px;
+    height: 56px;
+  }
+  @include desktop {
+    bottom: 95px;
+    width: 252px;
+    height: 87px;
+  }
 }
 .apple__img {
   position: absolute;
@@ -97,4 +209,16 @@ filter: blur(13.2364px);
   left: 30px;
   width: 200px;
   height: auto;
+  @include tablet {
+    bottom: 53px;
+    left: 38px;
+    width: 257px;
+    height: auto;
+  }
+  @include desktop {
+    bottom: 78px;
+    left: 60px;
+    width: 396px;
+    height: auto;
+  }
 }
