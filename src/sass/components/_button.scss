@@ -7,8 +7,8 @@
   font-size: 13px;
   line-height: 1.53;
   cursor: pointer;
-  transition: background-color $hover-focus-decor-func;
-  transition: color $hover-focus-decor-func;
+  transition: background-color $hover-focus-decor-func,
+    color $hover-focus-decor-func;
 }
 
 .button--order {
