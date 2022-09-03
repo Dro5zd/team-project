@@ -84,11 +84,11 @@
 
   &:hover,
   &:focus {
-    border-color: $green;
+    border-color: $green-hover;
   }
 
   &:active {
-    border-color: $dark-green;
+    border-color: $green;
   }
 
   @include tablet {
@@ -103,8 +103,8 @@
 }
 
 .favorites__image {
-  width: 222px;
-  height: 222px;
+  min-width: 222px;
+  min-height: 222px;
 
   @include tablet {
     width: 268px;
