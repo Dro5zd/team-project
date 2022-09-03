@@ -9,21 +9,40 @@
   @include retina {
     background-image: url(../images/mob/fruit-futer-mob-2x.png);
   }
+  @include tablet {
+    width: 768px;
+    padding: 100px 15px;
+    background-image: url(../images/tablet/fruit-futer-tablet-1x.png);
+    @include retina {
+      background-image: url(../images/tablet/fruit-futer-tablet-2x.png);
+    }
+  }
 }
 
 .footer-box {
   display: flex;
+  @include tablet {
+    margin-bottom: 40px;
+  }
 }
 
 .nav--footer {
-  display: block;
+  display: flex;
   margin-left: 81px;
   margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 0;
+    margin-left: 114px;
+  }
 }
 
 .nav__list--footer {
   flex-direction: column;
   gap: 20px;
+  @include tablet {
+    flex-direction: row;
+    gap: 28px;
+  }
 }
 
 .nav__link--footer {
@@ -36,6 +55,9 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 60px;
+  @include tablet {
+    padding-bottom: 100px;
+  }
 }
 
 .sub-form__title {
@@ -45,6 +67,17 @@
   font-size: 14px;
   line-height: 1.5;
   color: $black;
+}
+.input-box {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.sub-form__email--footer {
+  @include tablet {
+    width: 279px;
+  }
 }
 
 .button--color {
@@ -56,11 +89,20 @@
   &:focus {
     background-color: $yellow;
   }
+  @include tablet {
+    margin: 0;
+    margin-left: 13px;
+  }
 }
 
 .sub-form__policy {
   font-size: 10px;
   line-height: 1.2;
+  @include tablet {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .sub-form__link {
@@ -69,22 +111,42 @@
   text-decoration: underline;
 }
 
+.footer-box-two {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
 .link-list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 0;
+    justify-content: flex-start;
+    gap: 20px;
+  }
 }
 
 .link-list__link {
   font-size: 10px;
   line-height: 1.2;
   text-decoration: underline;
-
   color: $dark-green;
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .copyright {
   font-size: 10px;
   line-height: 1.2;
   text-align: center;
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
