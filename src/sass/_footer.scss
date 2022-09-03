@@ -1,7 +1,8 @@
 // Footer styles
 
 .footer {
-  padding: 60px 0;
+  margin: auto;
+  padding: 60px 15px;
   background-image: url(../images/mob/fruit-futer-mob-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,21 +16,20 @@
 }
 
 .nav--footer {
+  display: block;
   margin-left: 81px;
   margin-bottom: 40px;
 }
 
-.nav__item--footer:not(:last-child) {
-  padding: 0;
-  margin-bottom: 20px;
-  margin-right: 0;
+.nav__list--footer {
+  flex-direction: column;
+  gap: 20px;
 }
 
-.nav__link {
+.nav__link--footer {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
-  //color: #000000;
 }
 
 .sub-form--footer {
@@ -44,6 +44,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
+  color: $black;
 }
 
 .button--color {
