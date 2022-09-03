@@ -1,6 +1,6 @@
 .nav {
   @media screen and (max-width: 767px) {
-    display: none
+    display: none;
   }
 
   &__list {
@@ -16,11 +16,10 @@
   color: $solid-black;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &--current, &:hover,
+  &--current,
+  &:hover,
   &:focus {
     color: $green;
     text-decoration: underline;
   }
-
 }
-
