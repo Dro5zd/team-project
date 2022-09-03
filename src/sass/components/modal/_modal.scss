@@ -1,0 +1,56 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 305px;
+  //min-height: 581px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  padding: 32px;
+
+  background: $yellow;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include mobile {
+    width: 450px;
+  }
+
+  @include tablet {
+    width: 450px;
+  }
+
+  @include desktop {
+    width: 528px;
+  }
+
+  .is-hidden & {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+}
+
+.modal__btn {
+  width: 30px;
+  height: 30px;
+  background: $white;
+  border: none;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.modal__btn-img {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__btn:active & {
+    fill: $green;
+  }
+}
+
+//.modal__btn:hover &, .modal__btn:focus &,
