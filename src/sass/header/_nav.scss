@@ -1,0 +1,26 @@
+.nav {
+  @media screen and (max-width: 767px) {
+    display: none
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+  }
+}
+
+.nav__link {
+  line-height: 1.14;
+  color: $solid-black;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--current, &:hover,
+  &:focus {
+    color: $green;
+    text-decoration: underline;
+  }
+
+}
+

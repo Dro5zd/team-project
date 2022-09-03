@@ -7,3 +7,18 @@ button {
   cursor: pointer;
   transition: background-color $hover-focus-decor-func;
 }
+
+.order__button {
+  padding: 6px 18px;
+  background-color: $green;
+  border: none;
+
+  .header & {
+    margin-left: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $green-hover;
+  }
+}
