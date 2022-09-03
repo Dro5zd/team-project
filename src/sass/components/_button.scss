@@ -1,10 +1,27 @@
-button {
+.button {
+  padding: 11px 22px;
+  border-radius: 30px;
+  // border: 2px solid $dark-green;
+
+  background-color: $green;
   font-weight: 500;
   font-size: 13px;
-  line-height: 150%;
-  border: 2px solid $dark-green;
-  border-radius: 30px;
+  line-height: 1.53;
   cursor: pointer;
-  transition: color $hover-focus-decor-func;
   transition: background-color $hover-focus-decor-func;
+  transition: color $hover-focus-decor-func;
+}
+
+.button--order {
+  border: none;
+  padding: 6px 18px;
+
+  // .header & {
+  //   margin-left: 30px;
+  // }
+
+  &:hover,
+  &:focus {
+    background-color: $green-hover;
+  }
 }
