@@ -121,11 +121,11 @@
   margin-right: 14px;
   padding: 10px 22px;
   background-color: $white;
-  border: 2px solid $green;
+  border: 2px solid $dark-green;
   transition: border $hover-focus-decor-func;
   &:hover,
   &:focus {
-    border: 2px solid $dark-green;
+    border: 2px solid $dark-green-hover;
   }
 }
 .offerings__link {
