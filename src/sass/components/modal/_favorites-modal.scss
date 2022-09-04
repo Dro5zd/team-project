@@ -1,20 +1,12 @@
-.backdrop.is-hidden .favorites-modal {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
 .favorites-modal {
   position: fixed;
   top: 42vh;
   right: 50vw;
-  transform: translateX(50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  //   overflow: auto;
 
   padding: 32px;
   background-color: $yellow;
@@ -23,6 +15,19 @@
   width: 100%;
   max-height: 150px;
   height: 100%;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+  transform: translateX(50%) scale(1);
+  transition: transform $hover-focus-decor-func;
+
+  .is-hidden & {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transform: translateX(50%) scale(0.1);
+    transition: transform $hover-focus-decor-func;
+  }
 }
 
 .favorites-modal__label {
