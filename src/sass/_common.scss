@@ -3,6 +3,7 @@ body {
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   color: $black;
   background: $white;
+  scroll-behavior: smooth;
 }
 
 body.modal-open {
