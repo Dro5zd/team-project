@@ -1,0 +1,110 @@
+.slider {
+  @include tablet {
+    position: relative;
+    width: 336px;
+    height: 100%;
+  }
+  @include desktop {
+    width: 608px;
+  }
+  &__wrap {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @include tablet {
+      position: absolute;
+      top: 89px;
+      right: 32px;
+    }
+    @include desktop {
+      top: 14px;
+      right: 32px;
+    }
+  }
+  &__buttons {
+    @include tablet {
+      position: absolute;
+      top: 146px;
+      width: 336px;
+      display: flex;
+      justify-content: space-between;
+    }
+    @include desktop {
+      top: 264px;
+      width: 608px;
+    }
+  }
+  &__arrow {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 34px;
+      height: 28px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+      cursor: pointer;
+    }
+    @include desktop {
+      width: 48px;
+      height: 40px;
+      border-radius: 8px;
+    }
+  }
+  &__list {
+    display: flex;
+    overflow: hidden;
+    @include tablet {
+      padding-left: 8px;
+      gap: 8px;
+    }
+    @include desktop {
+      padding-left: 14px;
+      gap: 14px;
+    }
+  }
+  &__item {
+    flex-shrink: 0;
+    @include tablet {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      border: 14px solid $yellow;
+    }
+    @include desktop {
+      width: 580px;
+      height: 580px;
+      border: 26px solid $yellow;
+    }
+  }
+  &__img {
+    border-radius: 50%;
+    background-color: $white;
+    border-radius: 50%;
+    @include tablet {
+      width: 292px;
+      height: 292px;
+    }
+    @include desktop {
+      width: 528px;
+      height: 528px;
+      border-radius: 50%;
+      background-color: $white;
+      border-radius: 50%;
+    }
+  }
+}
+
+.slider__icon {
+  transition: fill $hover-focus-decor-func;
+  @include desktop {
+    width: 30px;
+    height: 100%;
+    fill: $black;
+  }
+  .slider__arrow:hover &,
+  .slider__arrow:focus & {
+    fill: $dark-green;
+  }
+}

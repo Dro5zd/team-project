@@ -1,62 +1,174 @@
 // Footer styles
 
 .footer {
+  margin: auto;
+  width: 100%;
+  padding: 60px 15px;
   background-image: url(../images/mob/fruit-futer-mob-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
   @include retina {
     background-image: url(../images/mob/fruit-futer-mob-2x.png);
   }
+  @include tablet {
+    width: 768px;
+    padding: 100px 15px;
+    background-image: url(../images/tablet/fruit-futer-tablet-1x.png);
+    @include retina {
+      background-image: url(../images/tablet/fruit-futer-tablet-2x.png);
+    }
+  }
+  @include desktop {
+    width: 1280px;
+    background-size: contain;
+    background-position: bottom;
+    background-image: url(../images/desktop/fruit-futer-desktop-1x.png);
+    @include retina {
+      background-image: url(../images/desktop/fruit-futer-desktop-2x.png);
+    }
+  }
+}
+
+.footer-desktop {
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .footer-box {
   display: flex;
-  padding-top: 60px;
+  @include tablet {
+    margin-bottom: 40px;
+  }
 }
 
 .nav--footer {
+  display: flex;
   margin-left: 81px;
   margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 0;
+    margin-left: 114px;
+  }
+  @include desktop {
+    margin-left: 148px;
+    margin-right: 320px;
+  }
 }
 
-.nav__link {
+.nav__list--footer {
+  flex-direction: column;
+  gap: 20px;
+  @include tablet {
+    flex-direction: row;
+    gap: 28px;
+  }
+}
+
+.nav__link--footer {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
-  //color: #000000;
 }
 
 .sub-form--footer {
   display: flex;
   flex-direction: column;
   padding-bottom: 60px;
+  @include tablet {
+    padding-bottom: 100px;
+  }
 }
 
 .sub-form__title {
   display: block;
   margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $black;
+}
+.input-box {
+  @include tablet {
+    display: flex;
+  }
 }
 
-.sub-form__btn {
+.sub-form__email--footer {
+  margin: 0;
+  @include tablet {
+    width: 279px;
+  }
+}
+
+.button--color {
   align-self: flex-end;
-  margin-bottom: 20px;
-  padding: 11px 22px;
+  margin: 20px 0;
   background-color: $white;
-  color: $black;
   border: 1px solid $dark-green;
   &:hover,
   &:focus {
     background-color: $yellow;
+  }
+  @include tablet {
+    margin: 0;
+    margin-left: 13px;
   }
 }
 
 .sub-form__policy {
   font-size: 10px;
   line-height: 1.2;
+  @include tablet {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .sub-form__link {
   color: $dark-green;
   padding-left: 3px;
   text-decoration: underline;
+}
+
+.footer-box-two {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.link-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 0;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+
+.link-list__link {
+  font-size: 10px;
+  line-height: 1.2;
+  text-decoration: underline;
+  color: $dark-green;
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+.copyright {
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }

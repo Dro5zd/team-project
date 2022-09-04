@@ -1,0 +1,44 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 320px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  padding: 20px;
+  background: $yellow;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    width: 458px;
+  }
+
+  .is-hidden & {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+}
+
+.modal__btn {
+  width: 32px;
+  height: 32px;
+  background: $white;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.modal__btn-img {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__btn:active & {
+    fill: $green;
+  }
+}
