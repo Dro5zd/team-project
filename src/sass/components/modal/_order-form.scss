@@ -14,11 +14,10 @@
 }
 
 .order-form__item {
-position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
-
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -51,16 +50,16 @@ position: relative;
   border: 0.854167px solid #FF705D;
 }
 
-.order-form__input:not(:focus):not(:placeholder-shown):valid{
+.order-form__input:not(:focus):not(:placeholder-shown):valid {
   border: 0.854167px solid #7EB101;
 }
 
-.order-form__error-group{
+.order-form__error-group {
   display: none;
 }
 
-.order-form__input:not(:focus):not(:placeholder-shown):invalid + .order-form__error-group{
- display: block;
+.order-form__input:not(:focus):not(:placeholder-shown):invalid + .order-form__error-group {
+  display: block;
 }
 
 .order-form__error {
@@ -74,14 +73,14 @@ position: relative;
   align-items: center;
 }
 
-.order-form__error::before{
+.order-form__error::before {
   content: "";
   display: inline-block;
   width: 12px;
   height: 13px;
   background-repeat: no-repeat;
   margin-right: 4px;
-  background-image:url(../images/icons/danger-sign.svg);
+  background-image: url(../images/icons/danger-sign.svg);
 }
 
 .order-form__button {
@@ -90,12 +89,13 @@ position: relative;
   background-color: $white;
   border: 2px solid $dark-green;
   transition: background-color $hover-focus-decor-func;
+
   &:active,
   &:focus {
     background-color: $green;
   }
 
-  .order-form__input:not(:focus):not(:placeholder-shown):invalid &{
+  .order-form__input:not(:focus):not(:placeholder-shown):invalid & {
     border: 0.854167px solid #FF705D;
   }
 }

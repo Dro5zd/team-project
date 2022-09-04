@@ -1,0 +1,72 @@
+.backdrop.is-hidden .favorites-modal {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.favorites-modal {
+  position: fixed;
+  top: 42vh;
+  right: 50vw;
+  transform: translateX(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  //   overflow: auto;
+
+  padding: 32px;
+  background-color: $yellow;
+  border-radius: 30px;
+  max-width: 300px;
+  width: 100%;
+  max-height: 150px;
+  height: 100%;
+}
+
+.favorites-modal__label {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $black;
+}
+
+.favorites-modal__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.favorites-modal__btn-yes {
+  background-color: $green;
+  width: 100px;
+  border: 2px solid $green;
+
+  transition: background-color $hover-focus-decor-func;
+  transition: border $hover-focus-decor-func;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $green-hover;
+    border: 2px solid $green;
+  }
+}
+
+.favorites-modal__btn-no {
+  width: 100px;
+  background-color: $white;
+  border: 2px solid $green;
+
+  transition: background-color $hover-focus-decor-func;
+  transition: border $hover-focus-decor-func;
+
+  &:active,
+  &:hover,
+  &:focus {
+    border: 2px solid tomato;
+  }
+}
