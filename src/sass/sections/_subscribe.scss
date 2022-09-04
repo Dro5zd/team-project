@@ -120,10 +120,11 @@
 .error::before{
   content: "";
   display: inline-block;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
   background-repeat: no-repeat;
-  background-image:url(../images/icons/Group\ \(1\).jpg);
+  background-image:url(../images/icons/danger-sign.svg);
 }
 
 .sub-form__button{

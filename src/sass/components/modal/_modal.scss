@@ -3,26 +3,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
-  min-width: 305px;
-  //min-height: 581px;
+  width: 320px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
-  padding: 32px;
-
+  padding: 20px;
   background: $yellow;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include mobile {
-    width: 450px;
-  }
-
   @include tablet {
-    width: 450px;
-  }
-
-  @include desktop {
-    width: 528px;
+    width: 458px;
   }
 
   .is-hidden & {
@@ -31,13 +20,14 @@
 }
 
 .modal__btn {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   background: $white;
   border: none;
+  border-radius: 50%;
   position: absolute;
-  right: 12px;
-  top: 12px;
+  right: 16px;
+  top: 16px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -52,5 +42,3 @@
     fill: $green;
   }
 }
-
-//.modal__btn:hover &, .modal__btn:focus &,

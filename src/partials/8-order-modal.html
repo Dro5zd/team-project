@@ -1,27 +1,49 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal__btn" type="button" data-modal-close>
-      <svg class="modal__btn-img" width="11" height="11">
-        <use href="./images/icons/sprite.svg#cross"></use>
+<div class='backdrop is-hidden' data-modal>
+  <div class='modal'>
+    <button class='modal__btn' type='button' data-modal-close>
+      <svg class='modal__btn-img' width='11' height='11'>
+        <use href='./images/icons/sprite.svg#cross'></use>
       </svg>
     </button>
-    <div class="registration-form-wrapper">
-      <h3 class="registration-form-wrapper__title">Order form</h3>
-      <form class="registration-form" name="registration-form">
-        <div class="registration-form__item">
-          <label class="registration-form__label" for="user_name">Name</label>
-          <input class="registration-form__input" type="text" name="name" id="user_name" placeholder="Your name">
+    <div class='order-form-wrapper'>
+      <h3 class='order-form-wrapper__title'>Order form</h3>
+      <form class='order-form' name='order-form'>
+        <div class='order-form__item'>
+          <label class='order-form__label' for='user_name'>Name</label>
+          <input class='order-form__input'
+                 type='text' name='name' id='user_name'
+                 placeholder='Your name' autofocus
+                 minlength='3' maxlength='25'
+                 required>
+          <div class='order-form__error-group'>
+            <p class='order-form__error'>The name must be between 3 and 25 characters</p>
+          </div>
         </div>
-        <div class="registration-form__item">
-          <label class="registration-form__label" for="user_phone">Phone number</label>
-          <input class="registration-form__input" type="tel" name="tel" id="user_phone" placeholder="+38(0_ _) _ _ _   _ _   _ _">
+        <div class='order-form__item'>
+          <label class='order-form__label' for='user_phone'>Phone number</label>
+          <input class='order-form__input'
+                 type='tel' name='tel' id='user_phone'
+                 placeholder='+38(0_ _) _ _ _   _ _   _ _'
+                 pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+                 required>
+          <div class='order-form__error-group'>
+            <p class='order-form__error'> This phone must be in the format  099 000 00 00</p>
+          </div>
         </div>
-        <div class="registration-form__item">
-          <label class="registration-form__label" for="user_reg_email">E-mail</label>
-          <input class="registration-form__input" type="email" name="e-mail" id="user_reg_email" placeholder="example@gmail.com">
+        <div class='order-form__item'>
+          <label class='order-form__label' for='user_email'>E-mail</label>
+          <input class='order-form__input'
+                 type='email'
+                 name='e-mail'
+                 id='user_email'
+                 placeholder='example@gmail.com'
+                 required>
+          <div class='order-form__error-group'>
+            <p class='order-form__error'>Please enter a valid email address</p>
+          </div>
         </div>
-        <button type="submit" class="main-btn">
-          <span>Відправити</span>
+        <button type='submit' class='button order-form__button'>
+          <span>Send</span>
         </button>
       </form>
     </div>
