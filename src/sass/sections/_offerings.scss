@@ -5,21 +5,33 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
+  @include retina {
+      background-image: url(../images/bg/mob/rectangle-mob-x2.png);
+    }
   @include mobile {
     background-image: url(../images/bg/480/rectangle-480-x1.png);
     width: 480px;
+    @include retina {
+      background-image: url(../images/bg/480/rectangle-480-x2.png);
+    }
   }
   @include tablet {
     background-image: url(../images/bg/tablet/rectangle-tablet-x1.png);
     width: 768px;
     padding-top: 187px;
     padding-bottom: 100px;
+    @include retina {
+      background-image: url(../images/bg/tablet/rectangle-tablet-x2.png);
+    }
   }
   @include desktop {
     background-image: url(../images/bg/desktop/rectangle-desktop-x1.png);
     width: 1280px;
-    padding-top: 231px;
+    padding-top: 321px;
     padding-bottom: 43px;
+    @include retina {
+      background-image: url(../images/bg/desktop/rectangle-desktop-x2.png);
+    }
   }
 }
 .container--offerings {
@@ -109,10 +121,11 @@
   margin-right: 14px;
   padding: 10px 22px;
   background-color: $white;
+  border: 2px solid $green;
+  transition: border $hover-focus-decor-func;
   &:hover,
   &:focus {
-    background-color: $dark-green;
-    color: $white;
+    border: 2px solid $dark-green;
   }
 }
 .offerings__link {
@@ -120,7 +133,7 @@
   color: $black;
   &:hover,
   &:focus {
-   text-decoration: underline;
+    text-decoration: underline;
   }
 }
 .offerings__link::after {
@@ -142,6 +155,7 @@
   }
   @include desktop {
     justify-content: start;
+    margin-bottom: 0;
   }
 }
 .apple::after {

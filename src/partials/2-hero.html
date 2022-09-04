@@ -1,12 +1,105 @@
 <section class="section hero">
   <div class='anchor' id='hero' data-section='hero'></div>
-    <div class="container">
-        <h2 class="section__title section__title--hero">
+   <div class="container container--hero">
+       <div class="slider__wrap">
+            <div class="slider">
+                <div class="slider__buttons">
+                    <div class="slider__arrow">
+                        <svg class="slider__icon" width="20" height="100%">
+        	                <use href="./images/icons/sprite.svg#arrow-left"></use>
+            	        </svg>
+                    </div>
+                    <div class="slider__arrow">
+                        <svg class="slider__icon" width="20" height="100%">
+        	                <use href="./images/icons/sprite.svg#arrow-right"></use>
+              	        </svg>
+                    </div>
+                </div>
+                <ul class="slider__list">
+                    <li class="slider__item">
+                        <picture>
+                            <source
+                                srcset="
+                                        ./images/desktop/cotlets-desktop-x1.png 1x,
+                                        ./images/desktop/cotlets-desktop-x2.png 2x
+                                "
+                                media="(min-width: 1280px)"
+                            />
+                            <source
+                                srcset="
+                                        ./images/tablet/cotlets-tablet-x1.png 1x,
+                                        ./images/tablet/cotlets-tablet-x2.png 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <img
+                                class="slider__img"
+                                src="./images/tablet/cotlets-tablet-x2.png"
+                                alt="falafel"
+                                width="320"
+                                height="320"
+                            />
+                        </picture>
+                    </li>
+                    <li class="slider__item">
+                        <picture>
+                            <source
+                                srcset="
+                                        ./images/desktop/greek-salad-desktop-x1.png 1x,
+                                        ./images/desktop/greek-salad-desktop-x2.png 2x
+                                "
+                                media="(min-width: 1280px)"
+                            />
+                            <source
+                                srcset="
+                                        ./images/tablet/greek-salad-tablet-x1.png 1x,
+                                        ./images/tablet/greek-salad-tablet-x2.png 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <img
+                                class="slider__img"
+                                src="./images/tablet/greek-salad-tablet-x2.png"
+                                alt="falafel"
+                                width="320"
+                                height="320"
+                            />
+                        </picture>
+                    </li>
+                    <li class="slider__item">
+                        <picture>
+                            <source
+                                srcset="
+                                        ./images/desktop/avocado-desktop-x1.png 1x,
+                                        ./images/desktop/avocado-desktop-x2.png 2x
+                                "
+                                media="(min-width: 1280px)"
+                            />
+                            <source
+                                srcset="
+                                        ./images/tablet/avocado-tablet-x1.png 1x,
+                                        ./images/tablet/avocado-tablet-x2.png 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <img
+                                class="slider__img"
+                                src="./images/tablet/avocado-tablet-x2.png"
+                                alt="falafel"
+                                width="320"
+                                height="320"
+                            />
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="section__title section__title--hero">
             Enjoy Your Favorite Food From Anywhere
-        </h2>
+        </h1>
         <p class="section__text section__text--hero">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
         </p>
-        <button class="order__button button" type="button" data-hero-modal-open>Order Now</button>
+        <button class="button--order button" type="button" data-hero-modal-open>Order Now</button>
     </div>
 </section>
