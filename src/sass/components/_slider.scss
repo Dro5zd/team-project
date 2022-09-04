@@ -45,12 +45,17 @@
       background-color: #ffffff;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
       cursor: pointer;
+      transition: box-shadow $hover-focus-decor-func;
     }
     @include desktop {
       width: 48px;
       height: 40px;
       border-radius: 8px;
     }
+  
+    &:active {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
   }
   &__list {
     display: flex;
@@ -106,5 +111,8 @@
   .slider__arrow:hover &,
   .slider__arrow:focus & {
     fill: $dark-green;
+  }
+  .slider__arrow:active & {
+    fill: $black;
   }
 }
