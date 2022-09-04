@@ -1,4 +1,5 @@
 .favorites {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -53,6 +54,8 @@
 }
 
 .favorites__item {
+  position: relative;
+
   @include tablet {
     flex-basis: calc((100% - 68px) / 2);
   }
@@ -115,4 +118,16 @@
     width: 315px;
     height: 315px;
   }
+}
+
+.favorites__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+  border: none;
 }
