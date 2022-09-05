@@ -1,0 +1,42 @@
+.modal--favorites {
+  width: 300px;
+}
+
+.modal__form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.modal__btn-yes {
+  background-color: $green;
+  width: 100px;
+  border: 2px solid $green;
+
+  transition: background-color $hover-focus-decor-func;
+  transition: border $hover-focus-decor-func;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $green-hover;
+    border: 2px solid $green;
+  }
+}
+
+.modal__btn-no {
+  width: 100px;
+  background-color: $white;
+  border: 2px solid $green;
+
+  transition: background-color $hover-focus-decor-func;
+  transition: border $hover-focus-decor-func;
+
+  &:active,
+  &:hover,
+  &:focus {
+    border: 2px solid tomato;
+  }
+}

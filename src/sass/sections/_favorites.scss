@@ -14,11 +14,9 @@
   }
 }
 
-.favorites__heading {
-  font-size: 28px;
-  line-height: 1.17;
+.favorites__title {
   text-align: center;
-  color: #2c2c2c;
+  color: $black;
   margin-bottom: 20px;
 
   @include tablet {
@@ -27,9 +25,7 @@
   }
 }
 
-.favorites__descr {
-  font-size: 14px;
-  line-height: 1.14;
+.favorites__text {
   text-align: center;
 
   @include tablet {
@@ -53,6 +49,8 @@
 }
 
 .favorites__item {
+  position: relative;
+
   @include tablet {
     flex-basis: calc((100% - 68px) / 2);
   }
@@ -108,7 +106,6 @@
 
   @include tablet {
     width: 268px;
-    height: 268px;
   }
 
   @include desktop {

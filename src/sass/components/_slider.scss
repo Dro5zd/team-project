@@ -41,12 +41,17 @@
     cursor: pointer;
     &:active {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+
     }
     @include desktop {
       width: 48px;
       height: 40px;
       border-radius: 8px;
     }
+  
+    &:active {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
   }
   &__item {
     transition: opacity 1s ease-in;
