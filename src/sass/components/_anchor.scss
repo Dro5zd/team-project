@@ -2,7 +2,7 @@
   position: relative;
   top: -130px;
   &--header {
-    top: 0px;
+    top: 0;
     width: 72px;
   }
   .hero & {
@@ -10,10 +10,10 @@
       top: -70px;
     }
     }
-  .subscribe & {
-    @include desktop {
-      top: -200px;
-    }
-  }
+  //.subscribe & {
+  //  @include desktop {
+  //    top: -300px;
+  //  }
+  //}
 
 }
