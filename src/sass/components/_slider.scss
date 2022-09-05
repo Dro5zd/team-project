@@ -1,20 +1,16 @@
 .slider {
-  @include tablet {
-    position: relative;
-    width: 336px;
-    height: 100%;
-  }
+  position: relative;
+  width: 336px;
+  height: 100%;
   @include desktop {
     width: 608px;
   }
   &__wrap {
+    position: absolute;
+    top: 89px;
+    right: 32px;
     @media screen and (max-width: 767px) {
       display: none;
-    }
-    @include tablet {
-      position: absolute;
-      top: 89px;
-      right: 32px;
     }
     @include desktop {
       top: 14px;
@@ -22,30 +18,30 @@
     }
   }
   &__buttons {
-    @include tablet {
-      position: absolute;
-      top: 146px;
-      width: 336px;
-      display: flex;
-      justify-content: space-between;
-    }
+    z-index: 4;
+    position: absolute;
+    top: 146px;
+    width: 336px;
+    display: flex;
+    justify-content: space-between;
     @include desktop {
       top: 264px;
       width: 608px;
     }
   }
   &__arrow {
-    @include tablet {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 34px;
-      height: 28px;
-      border-radius: 4px;
-      background-color: #ffffff;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-      cursor: pointer;
-      transition: box-shadow $hover-focus-decor-func;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    &:active {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+
     }
     @include desktop {
       width: 48px;
@@ -57,27 +53,20 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   }
   }
-  &__list {
-    display: flex;
-    overflow: hidden;
-    @include tablet {
-      padding-left: 8px;
-      gap: 8px;
-    }
-    @include desktop {
-      padding-left: 14px;
-      gap: 14px;
-    }
-  }
   &__item {
-    flex-shrink: 0;
-    @include tablet {
-      width: 320px;
-      height: 320px;
-      border-radius: 50%;
-      border: 14px solid $yellow;
-    }
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: block;
+    left: 8px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 14px solid $yellow;
     @include desktop {
+      left: 14px;
       width: 580px;
       height: 580px;
       border: 26px solid $yellow;
@@ -87,10 +76,8 @@
     border-radius: 50%;
     background-color: $white;
     border-radius: 50%;
-    @include tablet {
-      width: 292px;
-      height: 292px;
-    }
+    width: 292px;
+    height: 292px;
     @include desktop {
       width: 528px;
       height: 528px;
