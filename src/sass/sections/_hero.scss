@@ -51,10 +51,12 @@
 }
 .section__text--hero {
   margin-bottom: 28px;
+  line-height: 1.50;
   @include tablet {
   margin-bottom: 0;
   width: 336px;
   font-size: 16px;
+
   }
   @include desktop {
     margin-bottom: 40px;

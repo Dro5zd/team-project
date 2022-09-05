@@ -1,5 +1,4 @@
 .favorites {
-  position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -15,11 +14,9 @@
   }
 }
 
-.favorites__heading {
-  font-size: 28px;
-  line-height: 1.17;
+.favorites__title {
   text-align: center;
-  color: #2c2c2c;
+  color: $black;
   margin-bottom: 20px;
 
   @include tablet {
@@ -28,9 +25,7 @@
   }
 }
 
-.favorites__descr {
-  font-size: 14px;
-  line-height: 1.14;
+.favorites__text {
   text-align: center;
 
   @include tablet {
@@ -111,23 +106,10 @@
 
   @include tablet {
     width: 268px;
-    height: 268px;
   }
 
   @include desktop {
     width: 315px;
     height: 315px;
   }
-}
-
-.favorites__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: transparent;
-  border: none;
 }
