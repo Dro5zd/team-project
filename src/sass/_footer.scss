@@ -11,16 +11,12 @@
     background-image: url(../images/mob/fruit-futer-mob-2x.png);
   }
   @include tablet {
-    background-repeat: no-repeat;
-    background-size: cover;
     background-image: url(../images/tablet/fruit-futer-tablet-1x.png);
     @include retina {
       background-image: url(../images/tablet/fruit-futer-tablet-2x.png);
     }
   }
   @include desktop {
-    background-repeat: no-repeat;
-    background-size: cover;
     background-image: url(../images/desktop/fruit-futer-desktop-1x.png);
     @include retina {
       background-image: url(../images/desktop/fruit-futer-desktop-2x.png);
