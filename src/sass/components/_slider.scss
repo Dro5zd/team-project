@@ -1,0 +1,105 @@
+.slider {
+  position: relative;
+  width: 336px;
+  height: 100%;
+  @include desktop {
+    width: 608px;
+  }
+  &__wrap {
+    position: absolute;
+    top: 89px;
+    right: 32px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @include desktop {
+      top: 14px;
+      right: 32px;
+    }
+  }
+  &__buttons {
+    z-index: 4;
+    position: absolute;
+    top: 146px;
+    width: 336px;
+    display: flex;
+    justify-content: space-between;
+    @include desktop {
+      top: 264px;
+      width: 608px;
+    }
+  }
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    &:active {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+
+    }
+    @include desktop {
+      width: 48px;
+      height: 40px;
+      border-radius: 8px;
+    }
+  
+    &:active {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+  }
+  &__item {
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: block;
+    left: 8px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 14px solid $yellow;
+    @include desktop {
+      left: 14px;
+      width: 580px;
+      height: 580px;
+      border: 26px solid $yellow;
+    }
+  }
+  &__img {
+    border-radius: 50%;
+    background-color: $white;
+    border-radius: 50%;
+    width: 292px;
+    height: 292px;
+    @include desktop {
+      width: 528px;
+      height: 528px;
+      border-radius: 50%;
+      background-color: $white;
+      border-radius: 50%;
+    }
+  }
+}
+
+.slider__icon {
+  transition: fill $hover-focus-decor-func;
+  @include desktop {
+    width: 30px;
+    height: 100%;
+    fill: $black;
+  }
+  .slider__arrow:hover &,
+  .slider__arrow:focus & {
+    fill: $dark-green;
+  }
+  .slider__arrow:active & {
+    fill: $black;
+  }
+}

@@ -1,0 +1,66 @@
+.hero {
+  padding-top: 132px;
+  padding-bottom: 50px;
+  width: 100%;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+    padding-bottom: 37px;
+  }
+  @include desktop {
+    width: 1280px;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+}
+.container--hero {
+  @include tablet {
+  position: relative;
+  }
+  @include desktop {
+  position: relative;
+  padding-top: 159px;
+  padding-bottom: 3px;
+  }
+}
+.hero .button--order {
+  @include tablet {
+    position: absolute;
+    bottom: -72px;
+  }
+    @include desktop {
+    position: static;
+  }
+}
+.section__title--hero {
+  margin-bottom: 28px;
+  @include tablet {
+    margin-bottom: 44px;
+    width: 490px;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  @include desktop {
+    margin-bottom: 44px;
+    width: 500px;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+.section__text--hero {
+  margin-bottom: 28px;
+  line-height: 1.50;
+  @include tablet {
+  margin-bottom: 0;
+  width: 336px;
+  font-size: 16px;
+
+  }
+  @include desktop {
+    margin-bottom: 40px;
+    width: 500px;
+    font-size: 16px;
+  }
+}

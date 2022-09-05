@@ -62,30 +62,30 @@
 .customers__text{
     width: 280px;
 
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    @include tablet{
-        width: 395px;
-        font-size: 16px;
-        line-height: 1.18;
-    }
+  @include tablet{
+    width: 395px;
+    font-size: 16px;
+    line-height: 1.18;
+  }
 }
 
 
 .customers__set{
-    @include tablet{
+  @include tablet{
     display: flex;
-}
+  }
 }
 
 
 .customers__item{
-    background-color: #fff;
-    width: 280px;
-    margin-bottom: 24px;
-    padding: 8px;
-    border-radius: 0px 30px 30px 30px;;
-    border-top-left-radius: 0%;
+  background-color: #fff;
+  width: 280px;
+  margin-bottom: 24px;
+  padding: 8px;
+  border-radius: 0px 30px 30px 30px;;
+  border-top-left-radius: 0%;
 
     @include tablet{
       width: 336px;
@@ -99,7 +99,7 @@
 }
 
 .customers__item:last-child{
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .customers__list{
@@ -108,13 +108,13 @@
 }
 
 .customers__star{
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .customers__comment{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.18;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 .customers__account{
@@ -132,15 +132,15 @@
 }
 
 .customers__foto{
-    width: 48px;
-    height: 48px;
-    margin-right: 16px;
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
 }
 
 .customers__name{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .customers__dude{

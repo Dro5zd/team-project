@@ -1,0 +1,50 @@
+.menu-container {
+  position: relative;
+}
+
+.mob-menu {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  width: 130px;
+  border-radius: 30px 0 30px 30px;
+  box-shadow: 0 4px 24px rgba(105, 105, 105, 0.1);
+  overflow: hidden;
+  background: $white;
+}
+
+.mob-menu-nav__item {
+  transition: background-color $hover-focus-decor-func;
+
+  &:active {
+    background-color: $green;
+  }
+}
+
+.mob-menu-nav__link {
+  padding: 16px;
+  display: block;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $solid-black;
+}
+
+.mob-menu__btn {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
