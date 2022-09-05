@@ -19,8 +19,8 @@
       '[data-favorites-borshch-open]'
     ),
 
-    closeFavoritesYesBtn: document.querySelector('[data-favorites-yes-btn]'),
-    closeFavoritesNoBtn: document.querySelector('[data-favorites-no-btn]'),
+    closeFavoritesYesBtn: document.querySelector('[data-modal-yes-btn]'),
+    closeFavoritesNoBtn: document.querySelector('[data-modal-no-btn]'),
     modal: document.querySelector('[data-favorites-modal]'),
   };
 
