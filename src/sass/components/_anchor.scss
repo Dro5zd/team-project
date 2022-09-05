@@ -1,4 +1,11 @@
 .anchor {
   position: relative;
   top: -130px;
+  .hero & {
+  top: -60px;
+  }
+  &--header {
+    top: 0px;
+    width: 72px;
+  }
 }
