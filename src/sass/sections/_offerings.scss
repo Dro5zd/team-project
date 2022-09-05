@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   background-image: url(../images/bg/mob/rectangle-mob-x1.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   width: 100%;
   @include retina {
       background-image: url(../images/bg/mob/rectangle-mob-x2.png);
@@ -24,7 +24,7 @@
   }
   @include desktop {
     background-image: url(../images/bg/desktop/rectangle-desktop-x1.png);
-    padding-top: 321px;
+    padding-top: 230px;
     padding-bottom: 43px;
     @include retina {
       background-image: url(../images/bg/desktop/rectangle-desktop-x2.png);
@@ -90,7 +90,7 @@
   margin-bottom: 28px;
     @include tablet {
     margin-bottom: 40px;
-    width: 500px;
+    max-width: 500px;
     font-size: 16px;
   }
 }
@@ -98,7 +98,7 @@
   margin-bottom: 28px;
   @include tablet {
     margin-bottom: 20px;
-    width: 526px;
+    max-width: 526px;
     font-size: 42px;
   }
 }
@@ -152,7 +152,6 @@
     justify-content: start;
   }
   @include desktop {
-    justify-content: start;
     margin-bottom: 0;
   }
   &::after {
