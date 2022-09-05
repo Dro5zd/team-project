@@ -3,21 +3,19 @@
   padding-bottom: 60px;
   background-image: url(../images/bg/mob/rectangle-mob-x1.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
   @include retina {
       background-image: url(../images/bg/mob/rectangle-mob-x2.png);
     }
   @include mobile {
     background-image: url(../images/bg/480/rectangle-480-x1.png);
-    width: 480px;
     @include retina {
       background-image: url(../images/bg/480/rectangle-480-x2.png);
     }
   }
   @include tablet {
     background-image: url(../images/bg/tablet/rectangle-tablet-x1.png);
-    width: 768px;
     padding-top: 187px;
     padding-bottom: 100px;
     @include retina {
@@ -26,7 +24,6 @@
   }
   @include desktop {
     background-image: url(../images/bg/desktop/rectangle-desktop-x1.png);
-    width: 1280px;
     padding-top: 321px;
     padding-bottom: 43px;
     @include retina {
