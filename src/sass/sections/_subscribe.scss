@@ -1,9 +1,10 @@
-.subscribe{
+.subscribe {
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
+    position: relative;
 
     width: 100%;
     padding: 52px 15px 60px 15px;
@@ -18,6 +19,11 @@
         display: flow-root;
         width: 768px;
         padding: 82px 15px 100px 15px;
+    }
+
+    @include desktop{
+        width: 656px;
+        padding: 0 15px 110px 15px;
     }
 }
 

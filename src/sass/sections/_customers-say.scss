@@ -26,8 +26,11 @@
     }
 
     @include desktop{
+      width: 1280px;
+      height: 647px;
         background-image: url(../images/bg/desktop/rectangle-b-desktop-x1.png);
         background-size: 100% 100%;
+        padding: 100px;
     }
       
 
@@ -73,6 +76,7 @@
 }
 }
 
+
 .customers__item{
     background-color: #fff;
     width: 280px;
@@ -82,8 +86,14 @@
     border-top-left-radius: 0%;
 
     @include tablet{
+      width: 336px;
         margin-right: 32px;
     }
+
+    @include desktop{
+      width: 501px;
+      margin-right: 139px;
+    } 
 }
 
 .customers__item:last-child{
@@ -91,6 +101,7 @@
 }
 
 .customers__list{
+  gap: 4px;
     display: flex;
 }
 
@@ -107,8 +118,10 @@
 .customers__account{
     margin-top: 44px;
     display: flex;
-    max-width: 166px;
-    border-right: 0.854167px solid #7EB101;;
+    max-width: 137px;
+    border-right: 0.854167px solid #7EB101;
+
+    
 }
 
 .customers__foto{
@@ -126,4 +139,22 @@
 .customers__dude{
     font-size: 14px;
     line-height: 1.5;
+}
+
+
+
+.banan-decorative{
+  width: 281px;
+  position: absolute;
+  top: -48;
+
+  @include tablet{
+    width: 409px;
+    left: 387px;
+    top: -60px;
+  }
+
+  @include desktop{
+    width: 780px;
+  }
 }
