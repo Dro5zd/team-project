@@ -1,18 +1,35 @@
 .customers__say{
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 60px  15px;
+   
     background-image: url(../images/bg/mob/rectangle-b-mob-x1.png) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    @include mobile {
+
+    @include tablet{
+        
+    background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
+    }
+
+    @include desktop{
+        background-image: url(../images/bg/desktop/rectangle-b-desktop-x1.png);
+        background-size: 100% 100%;
+        // padding: 100px;
+    }
+}
+
+.container__customers{
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px  15px;
+
+    @include mobile{
         width: 480px;
     }
 
@@ -21,33 +38,21 @@
         padding: 60px 32px 120px 32px;
         width: 768px;
         display: block;
-        
-        background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
     }
 
     @include desktop{
-      width: 1280px;
-      height: 647px;
-        background-image: url(../images/bg/desktop/rectangle-b-desktop-x1.png);
-        background-size: 100% 100%;
-        padding: 100px;
+        width: 1280px;
+        // height: 647px;
     }
-      
-
 }
 
 .customers__title{
     width: 280px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
 
     margin-bottom: 20px;
 
     @include tablet{
         width: 501px;
-        font-weight: 700;
         font-size: 42px;
         line-height: 1.16;
     }
@@ -56,9 +61,6 @@
 
 .customers__text{
     width: 280px;
-    font-style: normal;  
-    font-size: 14px;
-    line-height: 1.14;
 
     margin-bottom: 32px;
 
@@ -118,10 +120,15 @@
 .customers__account{
     margin-top: 44px;
     display: flex;
-    max-width: 137px;
-    border-right: 0.854167px solid #7EB101;
-
+    min-width: 137px;
+    align-items: center;
     
+}
+
+.customers__initials{
+    padding-left: 16px;
+    padding-right: 18px;
+    border-right: 0.854167px solid #7EB101;
 }
 
 .customers__foto{
