@@ -104,8 +104,10 @@
   color: $black;
 }
 .input-box {
+  display: flex;
+  flex-direction: column;
   @include tablet {
-    display: flex;
+    flex-direction: row;
   }
 }
 
