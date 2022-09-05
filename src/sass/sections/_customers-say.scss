@@ -1,61 +1,60 @@
 .customers__say{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    width: 100%;
 
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 60px  15px;
-  background-image: url(../images/bg/mob/rectangle-b-mob-x1.png) ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  @include mobile {
-    width: 480px;
-  }
-
-  @include tablet{
-
-    padding: 60px 32px 120px 32px;
-    width: 768px;
-    display: block;
-
-    background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
-  }
-
-  @include desktop{
-    background-image: url(../images/bg/desktop/rectangle-b-desktop-x1.png);
+    background-image: url(../images/bg/mob/rectangle-b-mob-x1.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 100% 100%;
-  }
 
+    @include tablet{
+    background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
+    }
+
+    @include desktop{
+        background-image: url(../images/bg/desktop/rectangle-b-desktop-x1.png);
+        background-size: 100% 100%;
+
+    }
+}
+
+.container__customers{
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    padding: 60px  15px;
+
+    @include mobile{
+        width: 480px;
+    }
+
+    @include tablet{
+        padding: 60px 15px 120px;
+        width: 768px;
+        display: block;
+    }
+
+    @include desktop{
+        width: 1280px;
+        padding: 60px 123px 120px 15px;
+    }
 }
 
 .customers__title{
-  width: 280px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
+    width: 280px;
+    margin-bottom: 20px;
 
-  margin-bottom: 20px;
-
-  @include tablet{
-    width: 501px;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.16;
-  }
-
+    @include tablet{
+        width: 501px;
+        font-size: 42px;
+        line-height: 1.16;
+    }
 }
 
 .customers__text{
-  width: 280px;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
-
-  margin-bottom: 32px;
+    width: 280px;
+    margin-bottom: 32px;
 
   @include tablet{
     width: 395px;
@@ -64,10 +63,13 @@
   }
 }
 
-
 .customers__set{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @include tablet{
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -76,20 +78,25 @@
   width: 280px;
   margin-bottom: 24px;
   padding: 8px;
-  border-radius: 0px 30px 30px 30px;;
-  border-top-left-radius: 0%;
+  border-radius: 0 30px 30px 30px;
 
-  @include tablet{
-    margin-right: 32px;
-  }
+    @include tablet{
+      width: 336px;
+    }
+
+    @include desktop{
+      width: 501px;
+      margin-right: 139px;
+    }
 }
 
 .customers__item:last-child{
   margin-right: 0;
 }
 
-.customers__list{
-  display: flex;
+.customers__stars-list{
+  gap: 4px;
+    display: flex;
 }
 
 .customers__star{
@@ -103,16 +110,22 @@
 }
 
 .customers__account{
-  margin-top: 44px;
-  display: flex;
-  max-width: 166px;
-  border-right: 0.854167px solid #7EB101;;
+    margin-top: 44px;
+    display: flex;
+    min-width: 137px;
+    align-items: center;
+
+}
+
+.customers__initials{
+    padding-left: 16px;
+    padding-right: 18px;
+    border-right: 1px solid $dark-green;
 }
 
 .customers__foto{
   width: 48px;
   height: 48px;
-  margin-right: 16px;
 }
 
 .customers__name{
@@ -122,7 +135,6 @@
 }
 
 .customers__dude{
-  font-size: 14px;
-  line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.5;
 }
-

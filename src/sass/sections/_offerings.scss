@@ -3,21 +3,19 @@
   padding-bottom: 60px;
   background-image: url(../images/bg/mob/rectangle-mob-x1.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
   @include retina {
       background-image: url(../images/bg/mob/rectangle-mob-x2.png);
     }
   @include mobile {
     background-image: url(../images/bg/480/rectangle-480-x1.png);
-    width: 480px;
     @include retina {
       background-image: url(../images/bg/480/rectangle-480-x2.png);
     }
   }
   @include tablet {
     background-image: url(../images/bg/tablet/rectangle-tablet-x1.png);
-    width: 768px;
     padding-top: 187px;
     padding-bottom: 100px;
     @include retina {
@@ -26,7 +24,6 @@
   }
   @include desktop {
     background-image: url(../images/bg/desktop/rectangle-desktop-x1.png);
-    width: 1280px;
     padding-top: 321px;
     padding-bottom: 43px;
     @include retina {
@@ -70,8 +67,7 @@
   @include desktop {
     margin-bottom: 0;
   }
-}
-.offerings__item::before {
+&::before {
   display: block;
   content: '';
   margin-bottom: 16px;
@@ -82,6 +78,8 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+}
+
 .offerings__item--rocket::before {
     background-image: url(../../src/images/icons/rocket-icon.svg);
   }
@@ -135,8 +133,7 @@
   &:focus {
     text-decoration: underline;
   }
-}
-.offerings__link::after {
+&::after {
   display: inline-block;
   content: '';
   width: 10px;
@@ -144,6 +141,7 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url(../../src/images/icons/right-arrow.svg);
+}
 }
 .apple {
   position: relative;
@@ -157,8 +155,7 @@
     justify-content: start;
     margin-bottom: 0;
   }
-}
-.apple::after {
+  &::after {
   visibility: none;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
   display: block;
@@ -172,6 +169,8 @@
   background-position: bottom 52px left 380px, bottom 68px left 600px;
   }
 }
+}
+
 .apple__wrap {
   width: 280px;
   height: 280px;

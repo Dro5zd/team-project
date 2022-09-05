@@ -3,21 +3,25 @@
 .footer {
   width: 100%;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-  background-image: url(../images/mob/fruit-futer-mob-1x.png);
+  background-image: url(../images/mob/fruit-footer-mob-1x-min.png), url(../images/mob/orange-mob-1x-min.png), url(../images/mob/apple-footer-mob-1x-min.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain, 104px, 110px;
+  background-position: bottom, right top, left 132px;
   @include retina {
-    background-image: url(../images/mob/fruit-futer-mob-2x.png);
+    background-image: url(../images/mob/fruit-footer-mob-2x-min.png), url(../images/mob/orange-mob-2x-min.png), url(../images/mob/apple-footer-mob-2x-min.png);
   }
   @include tablet {
-    background-image: url(../images/tablet/fruit-futer-tablet-1x.png);
+    background-image: url(../images/tablet/fruit-footer-tab-1x-min.png), url(../images/tablet/orange-tab-1x-min.png);
+    background-size: cover, 203px;
+    background-position: bottom, right top;
     @include retina {
-      background-image: url(../images/tablet/fruit-futer-tablet-2x.png);
+      background-image: url(../images/tablet/fruit-footer-tab-2x-min.png), url(../images/tablet/orange-tab-2x-min.png);
     }
   }
   @include desktop {
     background-image: url(../images/desktop/fruit-futer-desktop-1x.png);
+    background-size: contain;
+    background-position: bottom;
     @include retina {
       background-image: url(../images/desktop/fruit-futer-desktop-2x.png);
     }
@@ -28,6 +32,9 @@
   margin: auto;
   width: 100%;
   padding: 60px 15px;
+  @include mobile {
+    width: 480px;
+  }
   @include tablet {
     width: 768px;
     padding: 100px 15px;
@@ -53,7 +60,7 @@
 
 .nav--footer {
   display: flex;
-  margin-left: 81px;
+  margin-right: 101px;
   margin-bottom: 40px;
   @include tablet {
     margin-bottom: 0;

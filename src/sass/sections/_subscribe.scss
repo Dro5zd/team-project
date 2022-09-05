@@ -1,9 +1,14 @@
-.subscribe{
+.subscribe-container{
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.subscribe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
+    position: relative;
 
   width: 100%;
   padding: 52px 15px 60px 15px;
@@ -13,12 +18,18 @@
     width: 480px;
   }
 
-  @include tablet{
-    //display: flex;
-    display: flow-root;
-    width: 768px;
-    padding: 82px 15px 100px 15px;
-  }
+    @include tablet{
+        display: flex;
+        width: 768px;
+        padding: 82px 15px 100px 15px;
+      justify-content: flex-start;
+    }
+
+    @include desktop{
+        width: 656px;
+      margin-left: 0;
+        padding: 0 15px 110px 15px;
+    }
 }
 
 .subscribe__title{
@@ -27,15 +38,12 @@
   line-height: 1.21;
   color: $black;
   width: 280px;
-
   margin-bottom: 20px;
 
   @include tablet{
     width: 100%;
-    font-weight: 700;
     font-size: 42px;
     line-height: 1.19;
-
   }
 
 }
@@ -72,15 +80,13 @@
   }
 }
 
-
-
 .sub-form__label{
   font-size: 12px;
   line-height: 1.5;
-  color: $color-input;
+
 }
 
-.sub-form__email{
+.sub-form__input{
   padding: 12px 0 12px 12px;
   height: 42px;
   width: 100%;
@@ -90,8 +96,11 @@
   border-radius: 30px;
   cursor: pointer;
   outline: none;
+  margin-bottom: 20px;
 
-  margin-bottom: 4px;
+::placeholder {
+  color: $color-input;
+}
 
   @include tablet{
     width: 395px;
@@ -99,11 +108,11 @@
 }
 
 .sub-form__email:not(:focus):not(:placeholder-shown):invalid {
-  border: 0.854167px solid #FF705D;
+  border: 1px solid #FF705D;
 }
 
 .sub-form__email:not(:focus):not(:placeholder-shown):valid{
-  border: 0.854167px solid #7EB101;
+  border: 1px solid $dark-green;
 }
 
 .error-group{
@@ -149,5 +158,23 @@
 
   @include tablet{
     margin-left: 22px;
+  }
+}
+
+.banan-decorative{
+  width: 281px;
+  position: absolute;
+  top: -48;
+
+  @include tablet{
+    width: 409px;
+    left: 387px;
+    top: -60px;
+  }
+
+  @include desktop{
+    width: 780px;
+    top: -30px;
+    left: 690px;
   }
 }
