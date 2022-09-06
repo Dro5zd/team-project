@@ -143,20 +143,23 @@
 }
 
 .banana-decorative {
-  width: 281px;
+  width: 280px;
   position: absolute;
-  top: -50;
-  right: 0;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
 
   @include tablet {
     width: 281px;
-    left: 453px;
-    top: -70px;
+    top: -3px;
+    right: 33px;
+    transform: translate(0, -50%);
   }
 
   @include desktop {
     width: 608px;
-    top: -50px;
-    left: 660px;
+    top: 25%;
+    right: 0;
+    //transform: translate(-50%, -50%);
   }
 }

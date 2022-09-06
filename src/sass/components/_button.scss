@@ -30,6 +30,7 @@
 }
 
 .go-up-btn {
+  display: none;
   @include tablet {
     position: fixed;
     bottom: 50px;
