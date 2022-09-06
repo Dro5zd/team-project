@@ -1,14 +1,35 @@
-<section class="subscribe">
-  <div class="subscribe-container">
+<section class='subscribe'>
+  <div class='subscribe-container'>
     <picture>
-      <source srcset= './images/mob/banan-mob-x1.png 1x, ./images/mob/banan-mob-x2.png 2x'  >
-      <img src="./images/mob/banan-mob-x2.png" alt="banana" class="banan-decorative" width="608">
+      <source
+        srcset='
+                ./images/desktop/banan-desktop-x1.png 1x,
+                ./images/desktop/banan-desktop-x2.png 2x
+              '
+        media='(min-width: 1280px)'
+      />
+      <source
+        srcset='
+                ./images/tablet/banan-tablet-x1.png 1x,
+                ./images/tablet/banan-tablet-x2.png 2x
+              '
+        media='(min-width: 768px)'
+      />
+      <source
+        srcset='
+                ./images/mob/banan-mob-x1.png 1x,
+                ./images/mob/banan-mob-x2.png 2x
+              '
+        media='(min-width: 480px)'
+      />
+      <img src='./images/desktop/banan-desktop-x2.png' alt='banana' class='banana-decorative' width='608'>
     </picture>
-    <h2 class="subscribe__title section__title">Subscribe To Get Special Offers</h2>
-    <p class="subscribe__text section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+    <h2 class='subscribe__title section__title'>Subscribe To Get Special Offers</h2>
+    <p class='subscribe__text section__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+      enim
       in eros elementum tristique.</p>
 
-    <form class="sub-form">
+    <form class='sub-form'>
       <div class='sub-form__item'>
         <label class='sub-form__label' for='sub-user-email'></label>
         <input class='sub-form__input'
@@ -16,12 +37,12 @@
                name='e-mail'
                id='sub-user-email'
                placeholder='Enter your email'
-               >
+        >
         <div class='error-group'>
           <p class='error'>Please enter a valid email address</p>
         </div>
       </div>
-      <button type="submit" class="button sub-form__button">Subscribe</button>
+      <button type='submit' class='button sub-form__button'>Subscribe</button>
     </form>
   </div>
 </section>
