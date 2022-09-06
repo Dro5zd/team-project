@@ -3,19 +3,25 @@
 .footer {
   width: 100%;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-  background-image: url(../images/mob/fruit-footer-mob-1x-min.png), url(../images/mob/orange-mob-1x-min.png), url(../images/mob/apple-footer-mob-1x-min.png);
+  background-image: url(../images/mob/fruit-footer-mob-1x-min.png),
+    url(../images/mob/orange-mob-1x-min.png),
+    url(../images/mob/apple-footer-mob-1x-min.png);
   background-repeat: no-repeat;
   background-size: contain, 104px, 110px;
   background-position: bottom, right top, left 132px;
   @include retina {
-    background-image: url(../images/mob/fruit-footer-mob-2x-min.png), url(../images/mob/orange-mob-2x-min.png), url(../images/mob/apple-footer-mob-2x-min.png);
+    background-image: url(../images/mob/fruit-footer-mob-2x-min.png),
+      url(../images/mob/orange-mob-2x-min.png),
+      url(../images/mob/apple-footer-mob-2x-min.png);
   }
   @include tablet {
-    background-image: url(../images/tablet/fruit-footer-tab-1x-min.png), url(../images/tablet/orange-tab-1x-min.png);
+    background-image: url(../images/tablet/fruit-footer-tab-1x-min.png),
+      url(../images/tablet/orange-tab-1x-min.png);
     background-size: cover, 203px;
     background-position: bottom, right top;
     @include retina {
-      background-image: url(../images/tablet/fruit-footer-tab-2x-min.png), url(../images/tablet/orange-tab-2x-min.png);
+      background-image: url(../images/tablet/fruit-footer-tab-2x-min.png),
+        url(../images/tablet/orange-tab-2x-min.png);
     }
   }
   @include desktop {
@@ -89,10 +95,6 @@
 .sub-form--footer {
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
-  @include tablet {
-    padding-bottom: 100px;
-  }
 }
 
 .sub-form__title {
@@ -151,10 +153,15 @@
 }
 
 .footer-box-two {
+  margin-top: 60px;
   @include tablet {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    margin-top: 100px;
+  }
+  @include desktop {
+    margin-top: 80px;
   }
 }
 
