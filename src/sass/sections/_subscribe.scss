@@ -145,13 +145,13 @@
 .banana-decorative {
   width: 281px;
   position: absolute;
-  top: -48;
+  top: -50;
   right: 0;
 
   @include tablet {
-    width: 409px;
-    left: 387px;
-    top: -60px;
+    width: 281px;
+    left: 453px;
+    top: -70px;
   }
 
   @include desktop {
