@@ -1,5 +1,3 @@
-
-
 .order-form {
   display: flex;
   flex-direction: column;
@@ -41,33 +39,49 @@
 }
 
 .order-form__input:not(:focus):not(:placeholder-shown):invalid {
-  border: 0.854167px solid #FF705D;
+  border: 1px solid $error;
+}
+
+form:invalid .order-form__button {
+  border: 1px solid $error;
+  pointer-events: none;
+}
+
+form:valid .order-form__button {
+  background: #BBF330;
+}
+
+input:required:invalid + .req-error-group{
+  display: block;
 }
 
 .order-form__input:not(:focus):not(:placeholder-shown):valid {
-  border: 0.854167px solid #7EB101;
+  border: 1px solid $dark-green;
 }
 
-.error-group {
+.error-group, .req-error-group {
   display: none;
 }
 
 .order-form__input:not(:focus):not(:placeholder-shown):invalid + .error-group {
   display: block;
 }
+//.order-form__input:not(:focus):not(:placeholder-shown):invalid + .req-error-group {
+//  display: block;
+//}
 
-.error {
+.error, .req-error {
   position: absolute;
   padding-left: 12px;
   height: 20px;
   font-size: 11px;
   line-height: 1.5;
-  color: #FF705D;
+  color: $error;
   display: flex;
   align-items: center;
 }
 
-.error::before {
+.error::before, .req-error::before {
   content: "";
   display: inline-block;
   width: 12px;
@@ -90,6 +104,6 @@
   }
 
   .order-form__input:not(:focus):not(:placeholder-shown):invalid & {
-    border: 0.854167px solid #FF705D;
+    border: 0.854167px solid $error;
   }
 }
