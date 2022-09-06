@@ -14,18 +14,17 @@
                  placeholder='Your name' autofocus
                  minlength='3' maxlength='25'
                  required>
-          <div class='req-error-group'>
-            <p class='req-error'>This field is required</p>
-          </div>
           <div class='error-group'>
             <p class='error'>The name must be between 3 and 25 characters</p>
+          </div>
+          <div class='req-error-group'>
+            <p class='req-error'>This field is required</p>
           </div>
         </div>
         <div class='order-form__item'>
           <label class='order-form__label' for='user_phone'>Phone number</label>
           <input class='order-form__input'
                  type='tel' name='tel' id='user_phone'
-                 value='+380'
                  placeholder='+38(0_ _) _ _ _   _ _   _ _'
                  pattern="+[0-9]{3}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
                  required>

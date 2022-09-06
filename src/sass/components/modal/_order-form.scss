@@ -42,8 +42,9 @@
 }
 
 form:invalid .order-form__button {
-  border: 1px solid $error;
-  //pointer-events: none;
+  //border: 1px solid $error;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 form:valid .order-form__button {
@@ -65,8 +66,12 @@ input:required:invalid + .req-error-group{
 .order-form__input:not(:focus):not(:placeholder-shown):invalid + .error-group {
   display: block;
 }
-//.order-form__input:not(:focus):not(:placeholder-shown):invalid + .req-error-group {
+
+//.order-form__input:not(:focus):not(:placeholder-shown):invalid + .error-group + .req-error-group {
 //  display: block;
+//  //opacity: 1;
+//  //background-color: #e30d0d;
+//  //height: 100px;
 //}
 
 .error, .req-error {
@@ -89,6 +94,16 @@ input:required:invalid + .req-error-group{
   margin-right: 4px;
   background-image: url(../images/icons/danger-sign.svg);
 }
+
+//.error::after, .req-error::after {
+//  content: "";
+//  display: inline-block;
+//  width: 12px;
+//  height: 14px;
+//  background-repeat: no-repeat;
+//  margin-right: 4px;
+//  background-image: url(../images/icons/danger-sign.svg);
+//}
 
 .order-form__button {
   margin-top: 7px;
