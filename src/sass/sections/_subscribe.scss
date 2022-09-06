@@ -1,6 +1,17 @@
 .subscribe-container{
   margin-left: auto;
   margin-right: auto;
+  padding: 52px 15px 60px 15px;
+  
+  @include tablet{
+    padding: 82px 15px 100px 15px;
+  }
+  
+  @include desktop{
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 15px 110px 15px;
+  }
 }
 
 .subscribe {
@@ -9,7 +20,6 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  padding: 52px 15px 60px 15px;
   margin-left: auto;
   margin-right: auto;
   @include mobile {
@@ -19,14 +29,13 @@
     @include tablet{
         display: flex;
         width: 768px;
-        padding: 82px 15px 100px 15px;
       justify-content: flex-start;
     }
 
     @include desktop{
-        width: 656px;
+        width: 1280px;
+        width: 100%;
       margin-left: 0;
-        padding: 0 15px 110px 15px;
     }
 }
 
@@ -42,6 +51,10 @@
     width: 100%;
     font-size: 42px;
     line-height: 1.19;
+  }
+
+  @include desktop{
+    max-width: 656px;
   }
 
 }
@@ -63,6 +76,11 @@
     line-height: 1.5;
 
   }
+
+  @include desktop{
+    max-width: 656px;
+  }
+
 }
 
 .sub-form{
