@@ -21,3 +21,41 @@
     background-color: $green-hover;
   }
 }
+
+// up-button styles
+.go-up {
+  rotate: -90deg;
+  fill: rgba(0, 0, 0, 0.2);
+  transition: fill $hover-focus-decor-func;
+}
+
+.go-up-btn {
+  @include desktop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: $dark-green solid 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: all $hover-focus-decor-func;
+  }
+
+}
+
+.go-up-btn:hover,
+.go-up-btn:focus {
+  //background-color: $yellow;
+  transform: scale(1.1);
+}
+
+.go-up-btn:hover .go-up,
+.go-up-btn:focus .go-up {
+  fill: $green-hover;
+
+}
