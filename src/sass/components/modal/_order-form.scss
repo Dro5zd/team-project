@@ -51,7 +51,7 @@ form:valid .order-form__button {
   background: #BBF330;
 }
 
-input:required:invalid + .req-error-group{
+input:required:invalid + .req-error-group {
   display: block;
 }
 

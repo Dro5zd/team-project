@@ -1,18 +1,12 @@
 .offerings {
   padding-top: 70px;
   padding-bottom: 60px;
-  background-image: url(../images/bg/mob/rectangle-mob-x1.png);
+  background-image: url(../images/bg/480/rectangle-480-x1.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 100%;
   @include retina {
-    background-image: url(../images/bg/mob/rectangle-mob-x2.png);
-  }
-  @include mobile {
-    background-image: url(../images/bg/480/rectangle-480-x1.png);
-    @include retina {
-      background-image: url(../images/bg/480/rectangle-480-x2.png);
-    }
+    background-image: url(../images/bg/480/rectangle-480-x2.png);
   }
   @include tablet {
     background-image: url(../images/bg/tablet/rectangle-tablet-x1.png);

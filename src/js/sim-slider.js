@@ -27,7 +27,7 @@ Sim.defaults = {
   arrows: true, // Пролистывание стрелками
 };
 
-Sim.prototype.elemPrev = function (num) {
+Sim.prototype.elemPrev = function(num) {
   num = num || 1;
 
   let prevElement = this.currentElement;
@@ -50,7 +50,7 @@ Sim.prototype.elemPrev = function (num) {
   }
 };
 
-Sim.prototype.elemNext = function (num) {
+Sim.prototype.elemNext = function(num) {
   num = num || 1;
 
   let prevElement = this.currentElement;
@@ -73,17 +73,17 @@ Sim.prototype.elemNext = function (num) {
   }
 };
 
-Sim.prototype.dotOn = function (num) {
+Sim.prototype.dotOn = function(num) {
   this.indicatorDotsAll[num].style.cssText =
     'background-color:#BBB; cursor:pointer;';
 };
 
-Sim.prototype.dotOff = function (num) {
+Sim.prototype.dotOff = function(num) {
   this.indicatorDotsAll[num].style.cssText =
     'background-color:#556; cursor:default;';
 };
 
-Sim.initialize = function (that) {
+Sim.initialize = function(that) {
   // Constants
   that.elemCount = that.sldrElements.length; // Количество элементов
 
@@ -95,8 +95,9 @@ Sim.initialize = function (that) {
   function getTime() {
     return new Date().getTime();
   }
+
   function setAutoScroll() {
-    that.autoScroll = setInterval(function () {
+    that.autoScroll = setInterval(function() {
       let fnTime = getTime();
       if (fnTime - bgTime + 10 > that.options.interval) {
         bgTime = fnTime;
@@ -128,10 +129,10 @@ Sim.initialize = function (that) {
     // Остановка прокрутки при наведении мыши на элемент
     that.sldrList.addEventListener(
       'mouseenter',
-      function () {
+      function() {
         clearInterval(that.autoScroll);
       },
-      false
+      false,
     );
     that.sldrList.addEventListener('mouseleave', setAutoScroll, false);
   }
@@ -140,25 +141,25 @@ Sim.initialize = function (that) {
     // инициализация стрелок
     that.leftArrow.addEventListener(
       'click',
-      function () {
+      function() {
         let fnTime = getTime();
         if (fnTime - bgTime > 1000) {
           bgTime = fnTime;
           that.elemPrev();
         }
       },
-      false
+      false,
     );
     that.rightArrow.addEventListener(
       'click',
-      function () {
+      function() {
         let fnTime = getTime();
         if (fnTime - bgTime > 1000) {
           bgTime = fnTime;
           that.elemNext();
         }
       },
-      false
+      false,
     );
   } else {
     that.leftArrow.style.display = 'none';

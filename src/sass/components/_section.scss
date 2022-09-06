@@ -5,14 +5,17 @@
   @include desktop {
     padding: 94px 0;
   }
+
   &__title {
     font-size: 28px;
     line-height: 1.18;
   }
-    &__subtitle {
+
+  &__subtitle {
     font-size: 18px;
     line-height: 1.17;
   }
+
   &__text {
     font-weight: 400;
     font-size: 14px;

@@ -1,22 +1,22 @@
 (() => {
   const refs = {
     openFavoritesGamburgerBtn: document.querySelector(
-      '[data-favorites-gamburger-open]'
+      '[data-favorites-gamburger-open]',
     ),
     openFavoritesPastaBtn: document.querySelector(
-      '[data-favorites-pasta-open]'
+      '[data-favorites-pasta-open]',
     ),
     openFavoritesPizzaBtn: document.querySelector(
-      '[data-favorites-pizza-open]'
+      '[data-favorites-pizza-open]',
     ),
     openFavoritesChickenBtn: document.querySelector(
-      '[data-favorites-chicken-open]'
+      '[data-favorites-chicken-open]',
     ),
     openFavoritesSalatBtn: document.querySelector(
-      '[data-favorites-salat-open]'
+      '[data-favorites-salat-open]',
     ),
     openFavoritesBorshchBtn: document.querySelector(
-      '[data-favorites-borshch-open]'
+      '[data-favorites-borshch-open]',
     ),
 
     closeFavoritesYesBtn: document.querySelector('[data-modal-yes-btn]'),

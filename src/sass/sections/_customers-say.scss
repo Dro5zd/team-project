@@ -1,141 +1,141 @@
-.customers__say{
-    width: 100%;
+.customers__say {
+  width: 100%;
 
-    background-image: url(../images/bg/mob/rectangle-b-mob-x1.png) ;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(../images/bg/mob/rectangle-b-mob-x1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @include tablet {
+    background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
+  }
+
+  @include desktop {
+    background-image: url(../images/bg/desktop/rectangle-b-desktop-x1.png);
     background-size: 100% 100%;
 
-    @include tablet{
-    background-image: url(../images/bg/tablet/rectangle-b-tablet-x1.png);
-    }
-
-    @include desktop{
-        background-image: url(../images/bg/desktop/rectangle-b-desktop-x1.png);
-        background-size: 100% 100%;
-
-    }
+  }
 }
 
-.container__customers{
+.container__customers {
   margin-right: auto;
   margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-    padding: 60px  15px;
+  padding: 60px 15px;
 
-    @include mobile{
-        width: 480px;
-    }
+  @include mobile {
+    width: 480px;
+  }
 
-    @include tablet{
-        padding: 60px 15px 120px;
-        width: 768px;
-        display: block;
-    }
+  @include tablet {
+    padding: 60px 15px 120px;
+    width: 768px;
+    display: block;
+  }
 
-    @include desktop{
-        width: 1280px;
-        padding: 60px 123px 120px 15px;
-    }
+  @include desktop {
+    width: 1280px;
+    padding: 60px 123px 120px 15px;
+  }
 }
 
-.customers__title{
-    width: 280px;
-    margin-bottom: 20px;
+.customers__title {
+  width: 280px;
+  margin-bottom: 20px;
 
-    @include tablet{
-        max-width: 501px;
-        width: 100%;
-        font-size: 42px;
-        line-height: 1.16;
-    }
+  @include tablet {
+    max-width: 501px;
+    width: 100%;
+    font-size: 42px;
+    line-height: 1.16;
+  }
 }
 
-.customers__text{
-    width: 280px;
-    margin-bottom: 32px;
+.customers__text {
+  width: 280px;
+  margin-bottom: 32px;
 
-  @include tablet{
+  @include tablet {
     width: 395px;
     font-size: 16px;
     line-height: 1.18;
   }
 }
 
-.customers__set{
+.customers__set {
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include tablet{
+  @include tablet {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
-.customers__item{
+.customers__item {
   background-color: #fff;
   width: 280px;
   margin-bottom: 24px;
   padding: 8px;
   border-radius: 0 30px 30px 30px;
 
-    @include tablet{
-      width: 336px;
-    }
+  @include tablet {
+    width: 336px;
+  }
 
-    @include desktop{
-      width: 501px;
-      margin-right: 139px;
-    }
+  @include desktop {
+    width: 501px;
+    margin-right: 139px;
+  }
 }
 
-.customers__item:last-child{
+.customers__item:last-child {
   margin-right: 0;
 }
 
-.customers__stars-list{
+.customers__stars-list {
   gap: 4px;
-    display: flex;
+  display: flex;
 }
 
-.customers__star{
+.customers__star {
   margin-bottom: 28px;
 }
 
-.customers__comment{
+.customers__comment {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
 }
 
-.customers__account{
-    margin-top: 44px;
-    display: flex;
-    min-width: 137px;
-    align-items: center;
+.customers__account {
+  margin-top: 44px;
+  display: flex;
+  min-width: 137px;
+  align-items: center;
 
 }
 
-.customers__initials{
-    padding-left: 16px;
-    padding-right: 18px;
-    border-right: 1px solid $dark-green;
+.customers__initials {
+  padding-left: 16px;
+  padding-right: 18px;
+  border-right: 1px solid $dark-green;
 }
 
-.customers__foto{
+.customers__foto {
   width: 48px;
   height: 48px;
 }
 
-.customers__name{
+.customers__name {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
 }
 
-.customers__dude{
-    font-size: 14px;
-    line-height: 1.5;
+.customers__dude {
+  font-size: 14px;
+  line-height: 1.5;
 }

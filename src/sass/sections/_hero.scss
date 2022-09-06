@@ -15,25 +15,28 @@
     padding-bottom: 0;
   }
 }
+
 .container--hero {
   @include tablet {
-  position: relative;
+    position: relative;
   }
   @include desktop {
-  position: relative;
-  padding-top: 159px;
-  padding-bottom: 3px;
+    position: relative;
+    padding-top: 159px;
+    padding-bottom: 3px;
   }
 }
+
 .hero .button--order {
   @include tablet {
     position: absolute;
     bottom: -72px;
   }
-    @include desktop {
+  @include desktop {
     position: static;
   }
 }
+
 .section__title--hero {
   margin-bottom: 28px;
   @include tablet {
@@ -49,13 +52,14 @@
     line-height: 1.2;
   }
 }
+
 .section__text--hero {
   margin-bottom: 28px;
   line-height: 1.50;
   @include tablet {
-  margin-bottom: 0;
-  width: 336px;
-  font-size: 16px;
+    margin-bottom: 0;
+    width: 336px;
+    font-size: 16px;
 
   }
   @include desktop {

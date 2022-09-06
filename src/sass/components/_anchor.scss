@@ -1,13 +1,15 @@
 .anchor {
   position: relative;
   top: -130px;
+
   &--header {
     top: 0;
     width: 72px;
   }
+
   .hero & {
     @include desktop {
       top: -70px;
     }
-    }
+  }
 }

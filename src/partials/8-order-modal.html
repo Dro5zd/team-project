@@ -6,51 +6,51 @@
       </svg>
     </button>
     <h3 class='modal__title'>Order form</h3>
-      <form class='order-form' name='order-form'>
-        <div class='order-form__item'>
-          <label class='order-form__label' for='user_name'>Name</label>
-          <input class='order-form__input'
-                 type='text' name='name' id='user_name'
-                 placeholder='Your name' autofocus
-                 minlength='3' maxlength='25'
-                 required>
-          <div class='error-group'>
-            <p class='error'>The name must be between 3 and 25 characters</p>
-          </div>
-          <div class='req-error-group'>
-            <p class='req-error'>This field is required</p>
-          </div>
+    <form class='order-form' name='order-form'>
+      <div class='order-form__item'>
+        <label class='order-form__label' for='user_name'>Name</label>
+        <input class='order-form__input'
+               type='text' name='name' id='user_name'
+               placeholder='Your name' autofocus
+               minlength='3' maxlength='25'
+               required>
+        <div class='error-group'>
+          <p class='error'>The name must be between 3 and 25 characters</p>
         </div>
-        <div class='order-form__item'>
-          <label class='order-form__label' for='user_phone'>Phone number</label>
-          <input class='order-form__input phone-mask'
-                 type='tel' name='tel' id='user_phone'
-                 placeholder='+38 (0_ _) _ _ _   _ _   _ _' required>
-          <div class='error-group'>
-            <p class='error'> This phone must be in the format  099 000 00 00</p>
-          </div>
-          <div class='req-error-group'>
-            <p class='req-error'>This field is required</p>
-          </div>
+        <div class='req-error-group'>
+          <p class='req-error'>This field is required</p>
         </div>
-        <div class='order-form__item'>
-          <label class='order-form__label' for='user_email'>E-mail</label>
-          <input class='order-form__input'
-                 type='email'
-                 name='e-mail'
-                 id='user_email'
-                 placeholder='example@gmail.com'
-                 required>
-          <div class='error-group'>
-            <p class='error'>Please enter a valid email address</p>
-          </div>
-          <div class='req-error-group'>
-            <p class='req-error'>This field is required</p>
-          </div>
+      </div>
+      <div class='order-form__item'>
+        <label class='order-form__label' for='user_phone'>Phone number</label>
+        <input class='order-form__input phone-mask'
+               type='tel' name='tel' id='user_phone'
+               placeholder='+38 (0_ _) _ _ _   _ _   _ _' required>
+        <div class='error-group'>
+          <p class='error'> This phone must be in the format 099 000 00 00</p>
         </div>
-        <button type='submit' class='button order-form__button'>
-          <span>Send</span>
-        </button>
-      </form>
+        <div class='req-error-group'>
+          <p class='req-error'>This field is required</p>
+        </div>
+      </div>
+      <div class='order-form__item'>
+        <label class='order-form__label' for='user_email'>E-mail</label>
+        <input class='order-form__input'
+               type='email'
+               name='e-mail'
+               id='user_email'
+               placeholder='example@gmail.com'
+               required>
+        <div class='error-group'>
+          <p class='error'>Please enter a valid email address</p>
+        </div>
+        <div class='req-error-group'>
+          <p class='req-error'>This field is required</p>
+        </div>
+      </div>
+      <button type='submit' class='button order-form__button'>
+        <span>Send</span>
+      </button>
+    </form>
   </div>
 </div>
