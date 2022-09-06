@@ -25,6 +25,7 @@
     if (event.type == "blur" && this.value.length < 5) this.value = "";
   }
 
+
   input.addEventListener("input", mask, false);
   input.addEventListener("focus", mask, false);
   input.addEventListener("blur", mask, false);
