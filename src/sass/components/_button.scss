@@ -16,10 +16,6 @@
   padding: 6px 18px;
   transition: background-color $hover-focus-decor-func;
 
-  // .header & {
-  //   margin-left: 30px;
-  // }
-
   &:hover,
   &:focus {
     background-color: $green-hover;

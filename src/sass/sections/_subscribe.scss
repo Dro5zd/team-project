@@ -1,16 +1,17 @@
-.subscribe-container{
+.subscribe-container {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   padding: 52px 15px 60px 15px;
-  
-  @include tablet{
+
+  @include tablet {
     padding: 82px 15px 100px 15px;
   }
-  
-  @include desktop{
+
+  @include desktop {
     max-width: 1280px;
     width: 100%;
-    padding: 0 15px 110px 15px;
+    padding-top: 0;
   }
 }
 
@@ -18,7 +19,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -26,91 +26,73 @@
     width: 480px;
   }
 
-    @include tablet{
-        display: flex;
-        width: 768px;
-      justify-content: flex-start;
-    }
+  @include tablet {
+    width: 768px;
+    justify-content: flex-start;
+  }
 
-    @include desktop{
-        width: 1280px;
-        width: 100%;
-      margin-left: 0;
-    }
+  @include desktop {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
-.subscribe__title{
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.21;
-  color: $black;
+.subscribe__title {
   width: 280px;
   margin-bottom: 20px;
 
-  @include tablet{
+  @include tablet {
     width: 100%;
     font-size: 42px;
     line-height: 1.19;
   }
 
-  @include desktop{
+  @include desktop {
     max-width: 656px;
   }
-
 }
 
-.subscribe__text{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #2C2C2C;
+.subscribe__text {
+  color: $solid-black;
   width: 280px;
-
   margin-bottom: 40px;
 
-  @include tablet{
+  @include tablet {
     width: 100%;
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 1.5;
-
   }
 
-  @include desktop{
+  @include desktop {
     max-width: 656px;
   }
-
 }
 
-.sub-form{
+.sub-form {
   flex-wrap: wrap;
   justify-content: flex-end;
   display: flex;
   width: 279px;
 
-  @include tablet{
+  @include tablet {
     justify-content: flex-start;
     display: flex;
     flex-wrap: nowrap;
   }
 }
 
-.sub-form__item{
+.sub-form__item {
   position: relative;
-  //display: flex;
-  //flex-direction: column;
-  //transition: border $hover-focus-decor-func;
 
-  @include tablet{
+  @include tablet {
     width: 395px;
   }
 }
 
-.sub-form__input{
+.sub-form__input {
   padding: 12px 0 12px 12px;
   height: 42px;
-  //width: 100%;
   min-width: 279px;
   background-color: transparent;
   border: 0.854167px solid $yellow;
@@ -118,11 +100,11 @@
   cursor: pointer;
   outline: none;
 
-::placeholder {
-  color: $color-input;
-}
+  ::placeholder {
+    color: $color-input;
+  }
 
-  @include tablet{
+  @include tablet {
     min-width: 395px;
   }
 }
@@ -131,57 +113,49 @@
   border: 1px solid #FF705D;
 }
 
-.sub-form__input:not(:focus):not(:placeholder-shown):valid{
+.sub-form__input:not(:focus):not(:placeholder-shown):valid {
   border: 1px solid $dark-green;
 }
 
-.sub-form__input:not(:focus):not(:placeholder-shown):invalid + .error-group{
+.sub-form__input:not(:focus):not(:placeholder-shown):invalid + .error-group {
   display: block;
 }
 
-.sub-form__item .error{
+.sub-form__item .error {
   padding-left: 0;
 }
 
-.sub-form__button{
-  background: $green;
+.sub-form__button {
   width: 103px;
   height: 42px;
-  border-radius: 30px;
-  outline: none;
-  cursor: pointer;
   border: none;
-  padding: 11px 22px ;
-margin-top: 20px;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
-  color: $black;
+  margin-top: 20px;
 
   &:hover,
-  &:focus{
+  &:focus {
     background-color: $green-hover;
   }
 
-  @include tablet{
+  @include tablet {
     margin-top: 0;
     margin-left: 15px;
   }
 }
 
-.banan-decorative{
+.banan-decorative {
   width: 281px;
   position: absolute;
   top: -48;
+  right: 0;
 
-  @include tablet{
+  @include tablet {
     width: 409px;
     left: 387px;
     top: -60px;
   }
 
-  @include desktop{
-    width: 780px;
+  @include desktop {
+    width: 608px;
     top: -30px;
     left: 690px;
   }
