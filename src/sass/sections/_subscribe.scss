@@ -80,10 +80,12 @@
   }
 }
 
-.sub-form__label{
-  font-size: 12px;
-  line-height: 1.5;
-
+.sub-form__item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: border $hover-focus-decor-func;
 }
 
 .sub-form__input{
@@ -96,7 +98,7 @@
   border-radius: 30px;
   cursor: pointer;
   outline: none;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
 
 ::placeholder {
   color: $color-input;
@@ -107,34 +109,25 @@
   }
 }
 
-.sub-form__email:not(:focus):not(:placeholder-shown):invalid {
+.sub-form__input:not(:focus):not(:placeholder-shown):invalid {
   border: 1px solid #FF705D;
 }
 
-.sub-form__email:not(:focus):not(:placeholder-shown):valid{
+.sub-form__input:not(:focus):not(:placeholder-shown):valid{
   border: 1px solid $dark-green;
 }
 
-.error-group{
-  font-size: 10px;
-  line-height: 1.5;
-  color: #FF705D;
-  display: none;
-}
-
-.sub-form__email:not(:focus):not(:placeholder-shown):invalid + .error-group{
+.sub-form__input:not(:focus):not(:placeholder-shown):invalid + .error-group{
   display: block;
 }
 
-.error::before{
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-right: 5px;
-  background-repeat: no-repeat;
-  background-image:url(../images/icons/danger-sign.svg);
+.sub-form__item .error{
+  padding-left: 0;
 }
+
+//.sub-form__input:not(:focus):not(:placeholder-shown):invalid .sub-form__button{
+//  pointer-events:none;
+//}
 
 .sub-form__button{
   background: $green;
@@ -145,7 +138,7 @@
   cursor: pointer;
   border: none;
   padding: 11px 22px ;
-
+margin-top: 20px;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
@@ -157,7 +150,8 @@
   }
 
   @include tablet{
-    margin-left: 22px;
+    margin-top: 0;
+    margin-left: 130px;
   }
 }
 

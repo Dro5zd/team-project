@@ -48,18 +48,18 @@
   border: 0.854167px solid #7EB101;
 }
 
-.order-form__error-group {
+.error-group {
   display: none;
 }
 
-.order-form__input:not(:focus):not(:placeholder-shown):invalid + .order-form__error-group {
+.order-form__input:not(:focus):not(:placeholder-shown):invalid + .error-group {
   display: block;
 }
 
-.order-form__error {
+.error {
   position: absolute;
   padding-left: 12px;
-  height: 15px;
+  height: 20px;
   font-size: 11px;
   line-height: 1.5;
   color: #FF705D;
@@ -67,11 +67,11 @@
   align-items: center;
 }
 
-.order-form__error::before {
+.error::before {
   content: "";
   display: inline-block;
   width: 12px;
-  height: 13px;
+  height: 14px;
   background-repeat: no-repeat;
   margin-right: 4px;
   background-image: url(../images/icons/danger-sign.svg);
