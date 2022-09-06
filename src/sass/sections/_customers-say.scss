@@ -46,7 +46,8 @@
     margin-bottom: 20px;
 
     @include tablet{
-        width: 501px;
+        max-width: 501px;
+        width: 100%;
         font-size: 42px;
         line-height: 1.16;
     }
