@@ -21,7 +21,6 @@
   padding-left: 12px;
 }
 
-
 .order-form__input {
   background: $white;
   border: 1px solid $yellow;
@@ -44,7 +43,7 @@
 
 form:invalid .order-form__button {
   border: 1px solid $error;
-  pointer-events: none;
+  //pointer-events: none;
 }
 
 form:valid .order-form__button {

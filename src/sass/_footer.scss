@@ -119,7 +119,7 @@
 .sub-form__input--footer {
   margin: 0;
   @include tablet {
-    width: 279px;
+    min-width: 279px;
   }
 }
 

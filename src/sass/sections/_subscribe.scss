@@ -82,30 +82,32 @@
 
 .sub-form__item{
   position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  transition: border $hover-focus-decor-func;
+  //display: flex;
+  //flex-direction: column;
+  //transition: border $hover-focus-decor-func;
+
+  @include tablet{
+    width: 395px;
+  }
 }
 
 .sub-form__input{
   padding: 12px 0 12px 12px;
   height: 42px;
-  width: 100%;
+  //width: 100%;
   min-width: 279px;
   background-color: transparent;
   border: 0.854167px solid $yellow;
   border-radius: 30px;
   cursor: pointer;
   outline: none;
-  //margin-bottom: 20px;
 
 ::placeholder {
   color: $color-input;
 }
 
   @include tablet{
-    width: 395px;
+    min-width: 395px;
   }
 }
 
@@ -124,10 +126,6 @@
 .sub-form__item .error{
   padding-left: 0;
 }
-
-//.sub-form__input:not(:focus):not(:placeholder-shown):invalid .sub-form__button{
-//  pointer-events:none;
-//}
 
 .sub-form__button{
   background: $green;
@@ -151,7 +149,7 @@ margin-top: 20px;
 
   @include tablet{
     margin-top: 0;
-    margin-left: 130px;
+    margin-left: 15px;
   }
 }
 
