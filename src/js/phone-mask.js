@@ -4,7 +4,7 @@
     event.keyCode && (keyCode = event.keyCode);
     let pos = this.selectionStart;
     if (pos < 3) event.preventDefault();
-    let matrix = "+38 (0__˚) ___-__-__",
+    let matrix = "+38 (0__) ___-__-__",
       i = 0,
       def = matrix.replace(/\D/g, ""),
       val = this.value.replace(/\D/g, ""),
@@ -24,7 +24,6 @@
     if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = newValue;
     if (event.type == "blur" && this.value.length < 5) this.value = "";
   }
-
 
   input.addEventListener("input", mask, false);
   input.addEventListener("focus", mask, false);
